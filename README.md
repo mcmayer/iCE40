@@ -9,21 +9,21 @@
 
 ## Breakout Board Overview ##
 
-<center>
 <figure>
+<center>
 <img src="images/iCE40HX-8K_Breakout_Board.png" width="386" />
-<figcaption>Fig1. - Breakout board (from [\[1\]](#ref1)).</figcaption>
-</figure>
+<figcaption>Fig1. - Breakout board.</figcaption>
 </center>
+</figure>
 
-
-<center>
 <figure>
+<center>
 <img src="images/block-diagram.png" width="1854" />
-<figcaption>Fig2. - Breakout board block diagram (from [\[1\]](#ref1)). </figcaption>
-</figure>
+<figcaption>Fig2. - Breakout board block diagram. </figcaption>
 </center>
+</figure>
 
+The images are taken from [\[1\]](#ref1).
 
 ## Hardware ##
 
@@ -49,7 +49,7 @@ TOTAL: $24.20
 
 ## References ##
 
-+ <a name="ref1"></a>\[1\] iCE40-HX8K Breakout Board User's Guide - [pdf][1]
++ <a name="ref1"></a>\[1\] iCE40-HX8K Breakout Board User's Guide - [pdf][1pdf]
 + <a name="ref2"></a>\[2\] iCE40 LP/HX Family Data Sheet - [pdf][2pdf]
 + <a name="ref3"></a>\[3\] FTDI FT2232H Dual High Speed USB to Multipurpose UART/FIFO IC - [page][3], [pdf][3pdf]
 + <a name="ref4"></a>\[4\] Micron N25Q032A13ESC40 32Mb, 3V, Multiple I/O Serial Flash Memory - [page][4], [pdf][4pdf]
@@ -60,7 +60,7 @@ TOTAL: $24.20
 
 
 [0]: http://www.latticesemi.com/Products/DevelopmentBoardsAndKits/iCE40HX8KBreakoutBoard.aspx
-[1]: http://www.latticesemi.com/view_document?document_id=50373
+[1pdf]: http://www.latticesemi.com/view_document?document_id=50373
 [2]: http://www.latticesemi.com/Products/FPGAandCPLD/iCE40.aspx
 [2pdf]: http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/iCE/iCE40LPHXFamilyDataSheet.pdf
 [3]: http://www.ftdichip.com/Products/ICs/FT2232H.htm
