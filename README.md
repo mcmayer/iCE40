@@ -16,14 +16,24 @@ The [physical constraint file](ice40hx8k.pcf) (pcf).
 ## Breakout Board Overview ##
 
 <figure>
+<div style="text-align: center">
 <img src="images/iCE40HX-8K_Breakout_Board.png" width="386" />
 <figcaption>Fig1. - Breakout board.</figcaption>
-</figure>
 </div>
+</figure>
 
 <figure>
-<img src="images/block-diagram.png" width="1854" />
-<figcaption>Fig2. - Breakout board block diagram. </figcaption>
+<div style="text-align: center">
+<img src="images/block-diagram-new.png" width="600" />
+<figcaption>Fig2. - Breakout board block diagram (from [\[1\]](#ref1)). </figcaption>
+</div>
+</figure>
+
+<figure>
+<div style="text-align: center">
+<img src="images/iCE40HX-8K_Breakout_Banks.png" width="240" />
+<figcaption>Fig3. - I/O Banks.</figcaption>
+</div>
 </figure>
 
 The images are taken from [\[1\]](#ref1).
