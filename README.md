@@ -13,6 +13,7 @@
 <img src="images/iCE40HX-8K_Breakout_Board.png" width="386" />
 <figcaption>Fig1. - Breakout board.</figcaption>
 </figure>
+</div>
 
 <figure>
 <img src="images/block-diagram.png" width="1854" />
