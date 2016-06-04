@@ -1,0 +1,21 @@
+### Clock
+set_io CLK_i J3
+
+### LEDs
+set_io LED_o[0] B5
+set_io LED_o[1] B4
+set_io LED_o[2] A2
+set_io LED_o[3] A1
+set_io LED_o[4] C5
+set_io LED_o[5] C4
+set_io LED_o[6] B3
+set_io LED_o[7] C3
+
+### UART (FTDI Channel B) 
+set_io RS232_RX_i B10 
+set_io RS232_TX_o B12 
+set_io RTSn       B13 
+set_io CTSn       A15 
+set_io DTRn       A16 
+set_io DSRn       B14 
+set_io DCDn       B15 
