@@ -22,6 +22,47 @@
 
 The images are taken from [\[1\]](#ref1).
 
+### UART ###
+
+Channel B of the FT2232H has a UART interface that is connectected to 
+bank 0 of the iCE40:
+
+| UART (FTDI Channel B)   | Pin |
+|-------------------------|-----|
+| `RS232_Rx_TTL`          | B12 |
+| `RS232_Tx_TTL`          | B10 |
+| `RTSn`                  | B13 |
+| `CTSn`                  | A15 |
+| `DTRn`                  | A16 |
+| `DSRn`                  | B14 |
+| `DCDn`                  | B15 |
+
+Note that `RX` and `TX` are from the point of view of the FT2232H.
+
+### Testpoints ###
+
+The board has 16 testpoints.
+
+| TP#    | Description |
+|-------:|-------------|
+|  TP1   | `3V3` |
+|  TP2   | `1V2` |
+|  TP3   | `GND` |
+|  TP4   | `VCCIO0` |
+|  TP5   | `VCCIO0` after pullup  |
+|  TP6   | `PLLVCC0` |
+|  TP7   | `PLLVCC0` after pullup |
+|  TP8   | `VCCIO1` |
+|  TP9   | `VCCIO1` after pullup |
+| TP10   | `VCCIO2` |
+| TP11   | `VCCIO2` after pullup |
+| TP12   | `PLLVCC2` |
+| TP13   | `PLLVCC2` after pullup |
+| TP14   | `VCCIO3` |
+| TP15   | `VCCIO3` after pullup |
+| TP16   | `CRESET_B` |
+
+
 ## Hardware ##
 
 | Component | Datasheet | Description | Package | Price |
