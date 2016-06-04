@@ -9,12 +9,12 @@
 
 ## Breakout Board Overview ##
 
+<div style="text-align:center">
 <figure>
-<center>
 <p><img src="images/iCE40HX-8K_Breakout_Board.png" width="386" /></p>
 <figcaption>Fig1. - Breakout board.</figcaption>
-</center>
 </figure>
+</div>
 
 <figure>
 <center>
