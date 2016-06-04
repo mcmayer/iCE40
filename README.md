@@ -10,17 +10,13 @@
 ## Breakout Board Overview ##
 
 <figure>
-<center>
-<p><img src="images/iCE40HX-8K_Breakout_Board.png" width="386" /></p>
+<img src="images/iCE40HX-8K_Breakout_Board.png" width="386" />
 <figcaption>Fig1. - Breakout board.</figcaption>
-</center>
 </figure>
 
 <figure>
-<center>
 <img src="images/block-diagram.png" width="1854" />
 <figcaption>Fig2. - Breakout board block diagram. </figcaption>
-</center>
 </figure>
 
 The images are taken from [\[1\]](#ref1).
