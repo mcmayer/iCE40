@@ -7,6 +7,12 @@
 
 [Project IceStorm][icestorm]
 
+[Run ZPU][runningZPU], [source code][ZPU-lattice]
+
+[Messing with a iCE40HX-8K FPGA][blogospheric].
+
+The [physical constraint file](ice40hx8k.pcf) (pcf).
+
 ## Breakout Board Overview ##
 
 <figure>
@@ -112,3 +118,5 @@ TOTAL: $24.20
 [7]: http://www.latticesemi.com/Products/DevelopmentBoardsAndKits.aspx#s=~_d0!2!1!!1!7!0!1!!2!!!0!1!3!2!_d2!fvf%7C%40productitemnames!_d6!353!sbf!ErDrsryrurzqFqxpvtpBpwpqCqxpvspwpypApvtpwpwpqqrzqqqrsr!%40sitecoreorder!_d0!4!Lattice+Development+kits!iCE40+LP/HX/LM!_d1!_d8!!yqHqtFpGpxpvppupxpupvpupwppwpppupKpvpJpIpEpzpBpApCppDpqyprpqsq!
 [icestorm]: http://www.clifford.at/icestorm/
 [runningZPU]: http://sigalrm.blogspot.ch/2014/04/running-zpu-softcore-on-lattice-ice40.html
+[ZPU-lattice]: https://github.com/iabdalkader/zpu-lattice
+[blogospheric]: https://stuartl.longlandclan.id.au/blog/2015/12/06/fpga-fun/
