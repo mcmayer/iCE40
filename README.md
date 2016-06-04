@@ -11,7 +11,7 @@
 
 <figure>
 <center>
-<img src="images/iCE40HX-8K_Breakout_Board.png" width="386" />
+<p><img src="images/iCE40HX-8K_Breakout_Board.png" width="386" /></p>
 <figcaption>Fig1. - Breakout board.</figcaption>
 </center>
 </figure>
