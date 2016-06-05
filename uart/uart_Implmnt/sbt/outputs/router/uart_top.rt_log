@@ -1,0 +1,29 @@
+* ******************************************************************************
+
+* iCEcube Router
+
+* Version:            2016.02.27810
+
+* Build Date:         Jan 28 2016 17:44:04
+
+* File Generated:     Jun 5 2016 21:32:04
+
+* Purpose:            Router runtime info
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Executing : C:\lscc\iCEcube2.2016.02\sbt_backend\bin\win32\opt\sbrouter.exe C:\lscc\iCEcube2.2016.02\sbt_backend\devices\ICE40P08.dev Y:\projects\iCE40HX8K\uart\uart_Implmnt\sbt\netlist\oadb-uart_top C:\lscc\iCEcube2.2016.02\sbt_backend\devices\ice40HX8K.lib Y:\projects\iCE40HX8K\uart\uart_Implmnt\sbt\outputs\packer\uart_top_pk.sdc --outdir Y:\projects\iCE40HX8K\uart\uart_Implmnt\sbt\outputs\router --sdf_file Y:/projects/iCE40HX8K/uart/uart_Implmnt\sbt\outputs\simulation_netlist\uart_top_sbt.sdf --pin_permutation 
+I1203: Reading Design uart_top
+I1202: Reading Architecture of device iCE40HX8K
+I1209: Started routing
+I1223: Total Nets : 132 
+I1212: Iteration  1 :    15 unrouted : 0 seconds
+I1212: Iteration  2 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+I1206: Completed routing
+I1204: Writing Design uart_top
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 12 seconds

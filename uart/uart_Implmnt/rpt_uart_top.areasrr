@@ -1,0 +1,56 @@
+#### START OF AREA REPORT #####[
+
+Part:			ICE40HX8KCT256 (Lattice)
+
+------------------------------------------------------------------------
+########   Utilization report for  Top level view:   uart_top   ########
+========================================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     32                 100 %                
+==================================================
+Total SEQUENTIAL ELEMENTS in the block uart_top:	32 (20.78 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+LUTS       93                 100 %                
+CARRYS     15                 100 %                
+===================================================
+Total COMBINATIONAL LOGIC in the block uart_top:	108 (70.13 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+PADS     10                 100 %                
+=================================================
+Total IO PADS in the block uart_top:	10 (6.49 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   uart_Z1   ########
+Instance path:   uart_top.uart_Z1                            
+=============================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     32                 100 %                
+==================================================
+Total SEQUENTIAL ELEMENTS in the block uart_top.uart_Z1:	32 (20.78 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+LUTS       92                 98.9 %               
+CARRYS     15                 100 %                
+===================================================
+Total COMBINATIONAL LOGIC in the block uart_top.uart_Z1:	107 (69.48 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

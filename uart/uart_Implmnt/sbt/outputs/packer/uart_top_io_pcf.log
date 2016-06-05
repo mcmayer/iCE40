@@ -1,0 +1,10 @@
+OUTPUT LED_o[7] 	 location (1, 33, 0) 	 C3 	 
+OUTPUT LED_o[3] 	 location (4, 33, 1) 	 A1 	 
+OUTPUT LED_o[6] 	 location (3, 33, 0) 	 B3 	 
+OUTPUT LED_o[4] 	 location (4, 33, 0) 	 C5 	 
+OUTPUT LED_o[2] 	 location (5, 33, 1) 	 A2 	 
+OUTPUT LED_o[0] 	 location (7, 33, 1) 	 B5 	 
+INPUT  CLK_i 	 location (0, 16, 1) 	 J3 	 
+INPUT  RS232_RX_i 	 location (24, 33, 0) 	 B10 	 
+OUTPUT LED_o[5] 	 location (3, 33, 1) 	 C4 	 
+OUTPUT LED_o[1] 	 location (6, 33, 1) 	 B4 	 

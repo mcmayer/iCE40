@@ -1,0 +1,14 @@
+Synopsys Netlist Linker, version comp201509p1, Build 145R, built Dec  9 2015
+@N|Running in 64-bit mode
+File Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_comp.srs changed - recompiling
+@N: NF107 :"Y:\projects\iCE40HX8K\uart\uart_top.v":1:7:1:14|Selected library: work cell: uart_top view verilog as top level
+@N: NF107 :"Y:\projects\iCE40HX8K\uart\uart_top.v":1:7:1:14|Selected library: work cell: uart_top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Jun 05 21:31:26 2016
+
+###########################################################]

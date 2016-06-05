@@ -1,0 +1,66 @@
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1346R, Built Dec  9 2015 10:24:09
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version K-2015.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: Y:\projects\iCE40HX8K\uart\uart_Implmnt\uart_scck.rpt 
+Printing clock  summary report in "Y:\projects\iCE40HX8K\uart\uart_Implmnt\uart_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+@N: BN362 :"y:\projects\ice40hx8k\uart\osdvu\uart.v":78:0:78:5|Removing sequential instance tx_out (in view: work.uart_Z1(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"y:\projects\ice40hx8k\uart\osdvu\uart.v":78:0:78:5|Removing sequential instance tx_data[7:0] (in view: work.uart_Z1(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=32  set on top level netlist uart_top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 132MB)
+
+
+
+Clock Summary
+*****************
+
+Start              Requested     Requested     Clock        Clock                
+Clock              Frequency     Period        Type         Group                
+---------------------------------------------------------------------------------
+uart_top|CLK_i     76.6 MHz      13.060        inferred     Autoconstr_clkgroup_0
+=================================================================================
+
+@W: MT529 :"y:\projects\ice40hx8k\uart\osdvu\uart.v":78:0:78:5|Found inferred clock uart_top|CLK_i which controls 55 sequential elements including my_uart.rx_countdown[5:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file Y:\projects\iCE40HX8K\uart\uart_Implmnt\uart.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 132MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 132MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 132MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Jun 05 21:31:27 2016
+
+###########################################################]

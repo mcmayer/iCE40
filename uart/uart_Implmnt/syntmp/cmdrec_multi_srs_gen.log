@@ -1,0 +1,7 @@
+C:\lscc\iCEcube2.2016.02\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_comp.srs  -osyn  Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_mult.srs  -log  Y:\projects\iCE40HX8K\uart\uart_Implmnt\synlog\uart_multi_srs_gen.srr 
+rc:0 success:1 runtime:1
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_comp.srs|i|1465155085|7448
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_mult.srs|o|1465155087|2984
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\synlog\uart_multi_srs_gen.srr|o|1465155087|749
+C:\lscc\iCEcube2.2016.02\synpbase\bin\syn_nfilter.exe|i|1460167530|3110400
+C:\lscc\iCEcube2.2016.02\synpbase\bin64\syn_nfilter.exe|i|1460167547|4182528

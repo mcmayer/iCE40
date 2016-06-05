@@ -98,9 +98,16 @@ TOTAL: $24.20
 	
 
 ## UART ##
-[http://www.chiark.greenend.org.uk/~sgtatham/putty/](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
+See the folder [uart/](uart).
 
+## Editors / IDEs ##
 
+### Atom (Mac OS X)  ###
+- [APIO IDE for](https://atom.io/packages/apio-ide) [Atom editor](https://atom.io).
+- [https://atom.io/packages/language-verilog](https://atom.io/packages/language-verilog)
+
+### IDEs ###
+- [APIO Experimental open source micro-ecosystem for open FPGAs](https://github.com/FPGAwars/apio)
 
 ## References ##
 

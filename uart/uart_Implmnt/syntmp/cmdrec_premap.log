@@ -1,0 +1,13 @@
+C:\lscc\iCEcube2.2016.02\synpbase\bin64\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  Y:\projects\iCE40HX8K\uart\uart_Implmnt   -part iCE40HX8K  -package CT256    -maxfan 10000 -RWCheckOnRam 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile Y:\projects\iCE40HX8K\uart\uart_Implmnt\synlog\report\uart_premap.xml  -oedif  Y:\projects\iCE40HX8K\uart\uart_Implmnt\uart.edf  -conchk_prepass  Y:\projects\iCE40HX8K\uart\uart_Implmnt\uart_cck.rpt   -autoconstraint  -freq 1.000   Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_mult.srs  -flow prepass  -gcc_prepass  -osrd  Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_prem.srd  -qsap  Y:\projects\iCE40HX8K\uart\uart_Implmnt\uart.sap  -devicelib  C:\lscc\iCEcube2.2016.02\synpbase\lib\generic\sb_ice40.v  -ologparam  Y:\projects\iCE40HX8K\uart\uart_Implmnt\syntmp\uart.plg  -osyn  Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_prem.srd  -prjdir  Y:\projects\iCE40HX8K\uart\  -prjname  uart_syn  -log  Y:\projects\iCE40HX8K\uart\uart_Implmnt\synlog\uart_premap.srr 
+rc:1 success:1 runtime:0
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\uart.edf|o|0|0
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\uart_cck.rpt|o|1465155087|2207
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_mult.srs|i|1465155087|2984
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_prem.srd|o|1465155087|9940
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\uart.sap|o|1465155088|2231
+C:\lscc\iCEcube2.2016.02\synpbase\lib\generic\sb_ice40.v|i|1460167562|224837
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\syntmp\uart.plg|o|1465155087|0
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_prem.srd|o|1465155087|9940
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\synlog\uart_premap.srr|o|1465155087|3632
+C:\lscc\iCEcube2.2016.02\synpbase\bin\m_generic.exe|i|1460167526|16209920
+C:\lscc\iCEcube2.2016.02\synpbase\bin64\m_generic.exe|i|1460167531|28982272

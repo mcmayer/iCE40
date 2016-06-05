@@ -1,0 +1,15 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: MT206 |Auto Constrain mode is enabled
+@N: BN362 :"y:\projects\ice40hx8k\uart\osdvu\uart.v":78:0:78:5|Removing sequential instance tx_state[1:0] (in view: work.uart_Z1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"y:\projects\ice40hx8k\uart\osdvu\uart.v":78:0:78:5|Removing sequential instance tx_countdown[5:0] (in view: work.uart_Z1(verilog)) of type view:PrimLib.sdffpatr(prim) because it does not drive other instances.
+@N: BN362 :"y:\projects\ice40hx8k\uart\osdvu\uart.v":78:0:78:5|Removing sequential instance tx_bits_remaining[3:0] (in view: work.uart_Z1(verilog)) of type view:PrimLib.sdffpatr(prim) because it does not drive other instances.
+@N: BN362 :"y:\projects\ice40hx8k\uart\osdvu\uart.v":78:0:78:5|Removing sequential instance tx_clk_divider[10:0] (in view: work.uart_Z1(verilog)) of type view:PrimLib.sdffpatr(prim) because it does not drive other instances.
+@N: FX1016 :"y:\projects\ice40hx8k\uart\uart_top.v":2:10:2:14|SB_GB_IO inserted on the port CLK_i.
+@N: BW103 |Synopsys Constraint File time units using default value of 1ns 
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: FX1056 |Writing EDF file: Y:\projects\iCE40HX8K\uart\uart_Implmnt\uart.edf
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

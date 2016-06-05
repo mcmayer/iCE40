@@ -1,0 +1,9 @@
+C:\lscc\iCEcube2.2016.02\synpbase\bin64\c_hdl.exe  -osyn  Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_comp.srs  -hdllog  Y:\projects\iCE40HX8K\uart\uart_Implmnt\synlog\uart_compiler.srr  -encrypt  -mp  4  -verilog  -prodtype  synplify_pro  -primux -fixsmult -infer_seqShift -ice -sdff_counter -nram -divnmod -nostructver   -I Y:\projects\iCE40HX8K\uart\  -I C:\lscc\iCEcube2.2016.02\synpbase\lib   -v2001  -devicelib  C:\lscc\iCEcube2.2016.02\synpbase\lib\generic\sb_ice40.v  -encrypt  -pro  -dmgen  Y:\projects\iCE40HX8K\uart\uart_Implmnt\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work Y:\projects\iCE40HX8K\uart\uart_top.v -lib work Y:\projects\iCE40HX8K\uart\osdvu\uart.v 
+rc:0 success:1 runtime:1
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\synwork\uart_comp.srs|o|1465155085|7448
+Y:\projects\iCE40HX8K\uart\uart_Implmnt\synlog\uart_compiler.srr|o|1465155085|439
+C:\lscc\iCEcube2.2016.02\synpbase\lib\generic\sb_ice40.v|i|1460167562|224837
+Y:\projects\iCE40HX8K\uart\uart_top.v|i|1465155077|1028
+Y:\projects\iCE40HX8K\uart\osdvu\uart.v|i|1465153635|6616
+C:\lscc\iCEcube2.2016.02\synpbase\bin\c_hdl.exe|i|1460167525|1311232
+C:\lscc\iCEcube2.2016.02\synpbase\bin64\c_hdl.exe|i|1460167530|1936896

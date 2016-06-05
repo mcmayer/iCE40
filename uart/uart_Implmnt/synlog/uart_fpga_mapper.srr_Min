@@ -1,0 +1,132 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sun Jun 05 21:31:29 2016
+#
+
+
+Top view:               uart_top
+Requested Frequency:    102.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 2.102
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------
+uart_top|CLK_i     102.0 MHz     86.7 MHz      9.803         11.533        -1.730     inferred     Autoconstr_clkgroup_0
+========================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                          |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------
+Starting        Ending          |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------
+uart_top|CLK_i  uart_top|CLK_i  |  0.000       2.102  |  No paths    -      |  No paths    -      |  No paths    -    
+======================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: uart_top|CLK_i
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                     Arrival          
+Instance                      Reference          Type        Pin     Net                   Time        Slack
+                              Clock                                                                         
+------------------------------------------------------------------------------------------------------------
+my_uart.rx_data[1]            uart_top|CLK_i     SB_DFFE     Q       LED_o_c[1]            0.378       2.102
+my_uart.rx_data[2]            uart_top|CLK_i     SB_DFFE     Q       LED_o_c[2]            0.378       2.102
+my_uart.rx_data[3]            uart_top|CLK_i     SB_DFFE     Q       LED_o_c[3]            0.378       2.102
+my_uart.rx_data[4]            uart_top|CLK_i     SB_DFFE     Q       LED_o_c[4]            0.378       2.102
+my_uart.rx_data[5]            uart_top|CLK_i     SB_DFFE     Q       LED_o_c[5]            0.378       2.102
+my_uart.rx_data[6]            uart_top|CLK_i     SB_DFFE     Q       LED_o_c[6]            0.378       2.102
+my_uart.rx_data[7]            uart_top|CLK_i     SB_DFFE     Q       LED_o_c[7]            0.378       2.102
+my_uart.rx_clk_divider[0]     uart_top|CLK_i     SB_DFF      Q       rx_clk_divider_1      0.378       2.614
+my_uart.rx_clk_divider[1]     uart_top|CLK_i     SB_DFF      Q       rx_clk_divider[1]     0.378       2.614
+my_uart.rx_clk_divider[5]     uart_top|CLK_i     SB_DFF      Q       rx_clk_divider[5]     0.378       2.614
+============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                         Required          
+Instance                      Reference          Type        Pin     Net                       Time         Slack
+                              Clock                                                                              
+-----------------------------------------------------------------------------------------------------------------
+my_uart.rx_data[0]            uart_top|CLK_i     SB_DFFE     D       LED_o_c[1]                0.074        2.102
+my_uart.rx_data[1]            uart_top|CLK_i     SB_DFFE     D       LED_o_c[2]                0.074        2.102
+my_uart.rx_data[2]            uart_top|CLK_i     SB_DFFE     D       LED_o_c[3]                0.074        2.102
+my_uart.rx_data[3]            uart_top|CLK_i     SB_DFFE     D       LED_o_c[4]                0.074        2.102
+my_uart.rx_data[4]            uart_top|CLK_i     SB_DFFE     D       LED_o_c[5]                0.074        2.102
+my_uart.rx_data[5]            uart_top|CLK_i     SB_DFFE     D       LED_o_c[6]                0.074        2.102
+my_uart.rx_data[6]            uart_top|CLK_i     SB_DFFE     D       LED_o_c[7]                0.074        2.102
+my_uart.rx_clk_divider[1]     uart_top|CLK_i     SB_DFF      D       rx_clk_divider_RNO[1]     0.074        2.614
+my_uart.rx_clk_divider[2]     uart_top|CLK_i     SB_DFF      D       rx_clk_divider_RNO[2]     0.074        2.614
+my_uart.rx_clk_divider[6]     uart_top|CLK_i     SB_DFF      D       rx_clk_divider_RNO[6]     0.074        2.614
+=================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        2.176
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.074
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     2.102
+
+    Number of logic level(s):                0
+    Starting point:                          my_uart.rx_data[1] / Q
+    Ending point:                            my_uart.rx_data[0] / D
+    The start point is clocked by            uart_top|CLK_i [rising] on pin C
+    The end   point is clocked by            uart_top|CLK_i [rising] on pin C
+
+Instance / Net                     Pin      Pin               Arrival     No. of    
+Name                   Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------
+my_uart.rx_data[1]     SB_DFFE     Q        Out     0.378     0.378       -         
+LED_o_c[1]             Net         -        -       1.798     -           2         
+my_uart.rx_data[0]     SB_DFFE     D        In      -         2.176       -         
+====================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Constraints that could not be applied
+None

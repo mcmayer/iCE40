@@ -1,0 +1,1 @@
+@W: MT529 :"y:\projects\ice40hx8k\uart\osdvu\uart.v":78:0:78:5|Found inferred clock uart_top|CLK_i which controls 55 sequential elements including my_uart.rx_countdown[5:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

@@ -9,10 +9,10 @@
 // to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 // copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
-// 
+//
 // The above copyright notice and this permission notice shall be included in
 // all copies or substantial portions of the Software.
-// 
+//
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -20,7 +20,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-// 
+//
 module uart(
     input clk, // The master clock for this module
     input rst, // Synchronous reset.
@@ -80,7 +80,7 @@ always @(posedge clk) begin
 		recv_state = RX_IDLE;
 		tx_state = TX_IDLE;
 	end
-	
+
 	// The clk_divider counter counts down from
 	// the CLOCK_DIVIDE constant. Whenever it
 	// reaches 0, 1/16 of the bit period has elapsed.
@@ -96,7 +96,7 @@ always @(posedge clk) begin
 		tx_clk_divider = CLOCK_DIVIDE;
 		tx_countdown = tx_countdown - 1;
 	end
-	
+
 	// Receive state machine
 	case (recv_state)
 		RX_IDLE: begin
@@ -167,7 +167,7 @@ always @(posedge clk) begin
 			recv_state = RX_IDLE;
 		end
 	endcase
-	
+
 	// Transmit state machine
 	case (tx_state)
 		TX_IDLE: begin

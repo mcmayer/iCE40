@@ -1,0 +1,87 @@
+* ******************************************************************************
+
+* iCEcube Report
+
+* Version:            2016.02.27810
+
+* Build Date:         Jan 28 2016 17:38:31
+
+* File Generated:     Jun 5 2016 21:32:02
+
+* Purpose:            General info of design implementation
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Synthesis/Placement Summary:
+----------------------------
+    Status:  Successful
+    Runtime: 1 seconds
+
+Device Info:
+------------
+    Device Family: iCE40
+    Device:        iCE40HX8K
+    Package:       CT256
+
+Design statistics:
+------------------
+    FFs:                  32
+    LUTs:                 111
+    RAMs:                 0
+    IOBs:                 10
+    GBs:                  1
+    PLLs:                 0
+    Warm Boots:           0
+
+Logic Resource Utilization:
+---------------------------
+    Total Logic Cells: 111/7680
+        Combinational Logic Cells: 79       out of   7680      1.02865%
+        Sequential Logic Cells:    32       out of   7680      0.416667%
+        Logic Tiles:               18       out of   960       1.875%
+    Registers: 
+        Logic Registers:           32       out of   7680      0.416667%
+        IO Registers:              0        out of   1280      0
+    Block RAMs:                    0        out of   32        0%
+    Warm Boots:                    0        out of   1         0%
+    Pins:
+        Input Pins:                2        out of   206       0.970874%
+        Output Pins:               8        out of   206       3.8835%
+        InOut Pins:                0        out of   206       0%
+    Global Buffers:                1        out of   8         12.5%
+    PLLs:                          0        out of   2         0%
+
+IO Bank Utilization:
+--------------------
+    Bank 3: 1        out of   52        1.92308%
+    Bank 1: 0        out of   52        0%
+    Bank 0: 9        out of   52        17.3077%
+    Bank 2: 0        out of   50        0%
+
+Detailed I/O Info:
+------------------
+    Input Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name 
+    ----------  ---------  -----------  -------  -------  -----------    ----------- 
+    B10         Input      SB_LVCMOS    No       0        Simple Input   RS232_RX_i  
+    J3          Input      SB_LVCMOS    No       3        Simple Input   CLK_i       
+
+    Output Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name 
+    ----------  ---------  -----------  -------  -------  -----------    ----------- 
+    A1          Output     SB_LVCMOS    No       0        Simple Output  LED_o[3]    
+    A2          Output     SB_LVCMOS    No       0        Simple Output  LED_o[2]    
+    B3          Output     SB_LVCMOS    No       0        Simple Output  LED_o[6]    
+    B4          Output     SB_LVCMOS    No       0        Simple Output  LED_o[1]    
+    B5          Output     SB_LVCMOS    No       0        Simple Output  LED_o[0]    
+    C3          Output     SB_LVCMOS    No       0        Simple Output  LED_o[7]    
+    C4          Output     SB_LVCMOS    No       0        Simple Output  LED_o[5]    
+    C5          Output     SB_LVCMOS    No       0        Simple Output  LED_o[4]    
+
+Detailed Global Buffer Info:
+----------------------------
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name
+    -------------  -------  ---------  ------  -----------
+    1              3        IO         32      CLK_i_c_g  

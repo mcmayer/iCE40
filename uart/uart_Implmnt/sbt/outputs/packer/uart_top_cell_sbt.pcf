@@ -1,0 +1,157 @@
+ble_pack my_uart.rx_bits_remaining_RNO_0_3_LC_7_25_0 { my_uart.rx_bits_remaining_RNO_0[3] }
+ble_pack my_uart.rx_bits_remaining_3_LC_7_25_1 { my_uart.rx_bits_remaining_RNO[3], my_uart.rx_bits_remaining[3] }
+ble_pack my_uart.rx_bits_remaining_RNO_4_3_LC_7_25_4 { my_uart.rx_bits_remaining_RNO_4[3] }
+ble_pack my_uart.rx_bits_remaining_RNO_5_3_LC_7_25_5 { my_uart.rx_bits_remaining_RNO_5[3] }
+ble_pack my_uart.rx_bits_remaining_RNO_2_3_LC_7_25_6 { my_uart.rx_bits_remaining_RNO_2[3] }
+ble_pack my_uart.rx_bits_remaining_RNO_1_3_LC_7_25_7 { my_uart.rx_bits_remaining_RNO_1[3] }
+clb_pack LT_7_25 { my_uart.rx_bits_remaining_RNO_0_3_LC_7_25_0, my_uart.rx_bits_remaining_3_LC_7_25_1, my_uart.rx_bits_remaining_RNO_4_3_LC_7_25_4, my_uart.rx_bits_remaining_RNO_5_3_LC_7_25_5, my_uart.rx_bits_remaining_RNO_2_3_LC_7_25_6, my_uart.rx_bits_remaining_RNO_1_3_LC_7_25_7 }
+set_location LT_7_25 7 25
+ble_pack my_uart.rx_countdown_RNIH36N1_0_LC_7_26_0 { my_uart.rx_countdown_RNIH36N1[0] }
+ble_pack my_uart.rx_countdown_RNIPOKB5_0_LC_7_26_1 { my_uart.rx_countdown_RNIPOKB5[0] }
+ble_pack my_uart.recv_state_RNI4O0M9_2_LC_7_26_2 { my_uart.recv_state_RNI4O0M9[2] }
+ble_pack my_uart.recv_state_RNIF559_1_LC_7_26_4 { my_uart.recv_state_RNIF559[1] }
+ble_pack my_uart.rx_bits_remaining_RNO_3_3_LC_7_26_5 { my_uart.rx_bits_remaining_RNO_3[3] }
+clb_pack LT_7_26 { my_uart.rx_countdown_RNIH36N1_0_LC_7_26_0, my_uart.rx_countdown_RNIPOKB5_0_LC_7_26_1, my_uart.recv_state_RNI4O0M9_2_LC_7_26_2, my_uart.recv_state_RNIF559_1_LC_7_26_4, my_uart.rx_bits_remaining_RNO_3_3_LC_7_26_5 }
+set_location LT_7_26 7 26
+ble_pack my_uart.rx_data_0_LC_7_27_0 { my_uart.rx_data_0_THRU_LUT4_0, my_uart.rx_data[0] }
+ble_pack my_uart.rx_data_7_LC_7_27_1 { my_uart.rx_data_7_THRU_LUT4_0, my_uart.rx_data[7] }
+ble_pack my_uart.rx_data_5_LC_7_27_2 { my_uart.rx_data_5_THRU_LUT4_0, my_uart.rx_data[5] }
+ble_pack my_uart.rx_data_2_LC_7_27_3 { my_uart.rx_data_2_THRU_LUT4_0, my_uart.rx_data[2] }
+ble_pack my_uart.rx_data_6_LC_7_27_4 { my_uart.rx_data_6_THRU_LUT4_0, my_uart.rx_data[6] }
+ble_pack my_uart.rx_data_3_LC_7_27_5 { my_uart.rx_data_3_THRU_LUT4_0, my_uart.rx_data[3] }
+ble_pack my_uart.rx_data_1_LC_7_27_6 { my_uart.rx_data_1_THRU_LUT4_0, my_uart.rx_data[1] }
+ble_pack my_uart.rx_data_4_LC_7_27_7 { my_uart.rx_data_4_THRU_LUT4_0, my_uart.rx_data[4] }
+clb_pack LT_7_27 { my_uart.rx_data_0_LC_7_27_0, my_uart.rx_data_7_LC_7_27_1, my_uart.rx_data_5_LC_7_27_2, my_uart.rx_data_2_LC_7_27_3, my_uart.rx_data_6_LC_7_27_4, my_uart.rx_data_3_LC_7_27_5, my_uart.rx_data_1_LC_7_27_6, my_uart.rx_data_4_LC_7_27_7 }
+set_location LT_7_27 7 27
+ble_pack my_uart.rx_clk_divider_0_LC_9_25_0 { my_uart.rx_clk_divider_RNO[0], my_uart.rx_clk_divider[0], my_uart.rx_clk_divider_1_cry_0_c }
+ble_pack my_uart.rx_clk_divider_1_cry_0_THRU_LUT4_0_LC_9_25_1 { my_uart.rx_clk_divider_1_cry_0_THRU_LUT4_0, my_uart.rx_clk_divider_1_cry_1_c }
+ble_pack my_uart.rx_clk_divider_1_cry_1_THRU_LUT4_0_LC_9_25_2 { my_uart.rx_clk_divider_1_cry_1_THRU_LUT4_0, my_uart.rx_clk_divider_1_cry_2_c }
+ble_pack my_uart.rx_clk_divider_1_cry_2_THRU_LUT4_0_LC_9_25_3 { my_uart.rx_clk_divider_1_cry_2_THRU_LUT4_0, my_uart.rx_clk_divider_1_cry_3_c }
+ble_pack my_uart.rx_clk_divider_1_cry_3_THRU_LUT4_0_LC_9_25_4 { my_uart.rx_clk_divider_1_cry_3_THRU_LUT4_0, my_uart.rx_clk_divider_1_cry_4_c }
+ble_pack my_uart.rx_clk_divider_1_cry_4_THRU_LUT4_0_LC_9_25_5 { my_uart.rx_clk_divider_1_cry_4_THRU_LUT4_0, my_uart.rx_clk_divider_1_cry_5_c }
+ble_pack my_uart.rx_clk_divider_1_cry_5_THRU_LUT4_0_LC_9_25_6 { my_uart.rx_clk_divider_1_cry_5_THRU_LUT4_0, my_uart.rx_clk_divider_1_cry_6_c }
+ble_pack my_uart.rx_clk_divider_1_cry_6_THRU_LUT4_0_LC_9_25_7 { my_uart.rx_clk_divider_1_cry_6_THRU_LUT4_0, my_uart.rx_clk_divider_1_cry_7_c }
+clb_pack LT_9_25 { my_uart.rx_clk_divider_0_LC_9_25_0, my_uart.rx_clk_divider_1_cry_0_THRU_LUT4_0_LC_9_25_1, my_uart.rx_clk_divider_1_cry_1_THRU_LUT4_0_LC_9_25_2, my_uart.rx_clk_divider_1_cry_2_THRU_LUT4_0_LC_9_25_3, my_uart.rx_clk_divider_1_cry_3_THRU_LUT4_0_LC_9_25_4, my_uart.rx_clk_divider_1_cry_4_THRU_LUT4_0_LC_9_25_5, my_uart.rx_clk_divider_1_cry_5_THRU_LUT4_0_LC_9_25_6, my_uart.rx_clk_divider_1_cry_6_THRU_LUT4_0_LC_9_25_7 }
+set_location LT_9_25 9 25
+ble_pack my_uart.rx_clk_divider_1_cry_7_THRU_LUT4_0_LC_9_26_0 { my_uart.rx_clk_divider_1_cry_7_THRU_LUT4_0, my_uart.rx_clk_divider_1_cry_8_c }
+ble_pack my_uart.rx_clk_divider_1_cry_8_THRU_LUT4_0_LC_9_26_1 { my_uart.rx_clk_divider_1_cry_8_THRU_LUT4_0, my_uart.rx_clk_divider_1_cry_9_c }
+ble_pack my_uart.rx_clk_divider_10_LC_9_26_2 { my_uart.rx_clk_divider_RNO[10], my_uart.rx_clk_divider[10] }
+ble_pack my_uart.rx_clk_divider_RNIKT1U_10_LC_9_26_3 { my_uart.rx_clk_divider_RNIKT1U[10] }
+ble_pack my_uart.rx_clk_divider_1_LC_9_26_4 { my_uart.rx_clk_divider_RNO[1], my_uart.rx_clk_divider[1] }
+ble_pack my_uart.rx_clk_divider_8_LC_9_26_5 { my_uart.rx_clk_divider_RNO[8], my_uart.rx_clk_divider[8] }
+ble_pack my_uart.rx_clk_divider_9_LC_9_26_6 { my_uart.rx_clk_divider_RNO[9], my_uart.rx_clk_divider[9] }
+ble_pack my_uart.rx_clk_divider_2_LC_9_26_7 { my_uart.rx_clk_divider_RNO[2], my_uart.rx_clk_divider[2] }
+clb_pack LT_9_26 { my_uart.rx_clk_divider_1_cry_7_THRU_LUT4_0_LC_9_26_0, my_uart.rx_clk_divider_1_cry_8_THRU_LUT4_0_LC_9_26_1, my_uart.rx_clk_divider_10_LC_9_26_2, my_uart.rx_clk_divider_RNIKT1U_10_LC_9_26_3, my_uart.rx_clk_divider_1_LC_9_26_4, my_uart.rx_clk_divider_8_LC_9_26_5, my_uart.rx_clk_divider_9_LC_9_26_6, my_uart.rx_clk_divider_2_LC_9_26_7 }
+set_location LT_9_26 9 26
+ble_pack my_uart.rx_clk_divider_3_LC_9_27_1 { my_uart.rx_clk_divider_RNO[3], my_uart.rx_clk_divider[3] }
+ble_pack my_uart.rx_clk_divider_4_LC_9_27_2 { my_uart.rx_clk_divider_RNO[4], my_uart.rx_clk_divider[4] }
+ble_pack my_uart.rx_clk_divider_6_LC_9_27_3 { my_uart.rx_clk_divider_RNO[6], my_uart.rx_clk_divider[6] }
+ble_pack my_uart.rx_clk_divider_5_LC_9_27_4 { my_uart.rx_clk_divider_RNO[5], my_uart.rx_clk_divider[5] }
+ble_pack my_uart.rx_clk_divider_RNIIMPV_3_LC_9_27_6 { my_uart.rx_clk_divider_RNIIMPV[3] }
+clb_pack LT_9_27 { my_uart.rx_clk_divider_3_LC_9_27_1, my_uart.rx_clk_divider_4_LC_9_27_2, my_uart.rx_clk_divider_6_LC_9_27_3, my_uart.rx_clk_divider_5_LC_9_27_4, my_uart.rx_clk_divider_RNIIMPV_3_LC_9_27_6 }
+set_location LT_9_27 9 27
+ble_pack CONSTANT_ONE_LUT4_LC_10_24_6 { CONSTANT_ONE_LUT4 }
+clb_pack LT_10_24 { CONSTANT_ONE_LUT4_LC_10_24_6 }
+set_location LT_10_24 10 24
+ble_pack my_uart.rx_countdown_RNO_5_2_LC_10_25_0 { my_uart.rx_countdown_RNO_5[2] }
+ble_pack my_uart.rx_countdown_RNO_0_5_LC_10_25_1 { my_uart.rx_countdown_RNO_0[5] }
+ble_pack my_uart.rx_countdown_5_LC_10_25_2 { my_uart.rx_countdown_RNO[5], my_uart.rx_countdown[5] }
+ble_pack my_uart.rx_clk_divider_RNIF1TF_7_LC_10_25_3 { my_uart.rx_clk_divider_RNIF1TF[7] }
+ble_pack my_uart.rx_countdown_RNO_6_2_LC_10_25_4 { my_uart.rx_countdown_RNO_6[2] }
+ble_pack my_uart.rx_countdown_RNO_4_2_LC_10_25_5 { my_uart.rx_countdown_RNO_4[2] }
+ble_pack my_uart.rx_clk_divider_7_LC_10_25_6 { my_uart.rx_clk_divider_RNO[7], my_uart.rx_clk_divider[7] }
+ble_pack my_uart.rx_countdown_RNIDTTP_2_LC_10_25_7 { my_uart.rx_countdown_RNIDTTP[2] }
+clb_pack LT_10_25 { my_uart.rx_countdown_RNO_5_2_LC_10_25_0, my_uart.rx_countdown_RNO_0_5_LC_10_25_1, my_uart.rx_countdown_5_LC_10_25_2, my_uart.rx_clk_divider_RNIF1TF_7_LC_10_25_3, my_uart.rx_countdown_RNO_6_2_LC_10_25_4, my_uart.rx_countdown_RNO_4_2_LC_10_25_5, my_uart.rx_clk_divider_7_LC_10_25_6, my_uart.rx_countdown_RNIDTTP_2_LC_10_25_7 }
+set_location LT_10_25 10 25
+ble_pack my_uart.rx_countdown_1_LC_10_26_1 { my_uart.rx_countdown_RNO[1], my_uart.rx_countdown[1] }
+ble_pack my_uart.rx_countdown_RNO_0_2_LC_10_26_2 { my_uart.rx_countdown_RNO_0[2] }
+ble_pack my_uart.rx_countdown_2_LC_10_26_3 { my_uart.rx_countdown_RNO[2], my_uart.rx_countdown[2] }
+ble_pack my_uart.rx_clk_divider_RNIU7NL2_9_LC_10_26_5 { my_uart.rx_clk_divider_RNIU7NL2[9] }
+ble_pack my_uart.rx_countdown_RNIJ5KS3_5_LC_10_26_6 { my_uart.rx_countdown_RNIJ5KS3[5] }
+ble_pack my_uart.rx_countdown_RNIDTTP_0_2_LC_10_26_7 { my_uart.rx_countdown_RNIDTTP_0[2] }
+clb_pack LT_10_26 { my_uart.rx_countdown_1_LC_10_26_1, my_uart.rx_countdown_RNO_0_2_LC_10_26_2, my_uart.rx_countdown_2_LC_10_26_3, my_uart.rx_clk_divider_RNIU7NL2_9_LC_10_26_5, my_uart.rx_countdown_RNIJ5KS3_5_LC_10_26_6, my_uart.rx_countdown_RNIDTTP_0_2_LC_10_26_7 }
+set_location LT_10_26 10 26
+ble_pack my_uart.recv_state_RNO_6_0_LC_10_27_0 { my_uart.recv_state_RNO_6[0] }
+ble_pack my_uart.recv_state_RNO_1_0_LC_10_27_1 { my_uart.recv_state_RNO_1[0] }
+ble_pack my_uart.rx_countdown_4_LC_10_27_2 { my_uart.rx_countdown_RNO[4], my_uart.rx_countdown[4] }
+ble_pack my_uart.recv_state_RNO_5_0_LC_10_27_3 { my_uart.recv_state_RNO_5[0] }
+ble_pack my_uart.rx_countdown_3_LC_10_27_4 { my_uart.rx_countdown_RNO[3], my_uart.rx_countdown[3] }
+ble_pack my_uart.rx_countdown_RNINCD63_4_LC_10_27_5 { my_uart.rx_countdown_RNINCD63[4] }
+ble_pack my_uart.rx_countdown_RNO_2_2_LC_10_27_6 { my_uart.rx_countdown_RNO_2[2] }
+ble_pack my_uart.rx_countdown_RNIK53C3_3_LC_10_27_7 { my_uart.rx_countdown_RNIK53C3[3] }
+clb_pack LT_10_27 { my_uart.recv_state_RNO_6_0_LC_10_27_0, my_uart.recv_state_RNO_1_0_LC_10_27_1, my_uart.rx_countdown_4_LC_10_27_2, my_uart.recv_state_RNO_5_0_LC_10_27_3, my_uart.rx_countdown_3_LC_10_27_4, my_uart.rx_countdown_RNINCD63_4_LC_10_27_5, my_uart.rx_countdown_RNO_2_2_LC_10_27_6, my_uart.rx_countdown_RNIK53C3_3_LC_10_27_7 }
+set_location LT_10_27 10 27
+ble_pack my_uart.rx_countdown_RNO_3_2_LC_10_28_2 { my_uart.rx_countdown_RNO_3[2] }
+ble_pack my_uart.recv_state_RNO_4_0_LC_10_28_6 { my_uart.recv_state_RNO_4[0] }
+clb_pack LT_10_28 { my_uart.rx_countdown_RNO_3_2_LC_10_28_2, my_uart.recv_state_RNO_4_0_LC_10_28_6 }
+set_location LT_10_28 10 28
+ble_pack my_uart.rx_countdown_RNIEMHI6_2_LC_11_25_0 { my_uart.rx_countdown_RNIEMHI6[2] }
+ble_pack my_uart.recv_state_RNIG81F7_1_LC_11_25_1 { my_uart.recv_state_RNIG81F7[1] }
+ble_pack my_uart.recv_state_RNIOPND_1_1_LC_11_25_2 { my_uart.recv_state_RNIOPND_1[1] }
+ble_pack my_uart.recv_state_RNIOPND_1_LC_11_25_3 { my_uart.recv_state_RNIOPND[1] }
+ble_pack my_uart.rx_countdown_RNIH36N1_0_0_LC_11_25_4 { my_uart.rx_countdown_RNIH36N1_0[0] }
+ble_pack my_uart.rx_countdown_RNIRGTL2_0_LC_11_25_5 { my_uart.rx_countdown_RNIRGTL2[0] }
+ble_pack my_uart.recv_state_RNIAONE_1_LC_11_25_6 { my_uart.recv_state_RNIAONE[1] }
+ble_pack my_uart.rx_countdown_RNI80VC_5_LC_11_25_7 { my_uart.rx_countdown_RNI80VC[5] }
+clb_pack LT_11_25 { my_uart.rx_countdown_RNIEMHI6_2_LC_11_25_0, my_uart.recv_state_RNIG81F7_1_LC_11_25_1, my_uart.recv_state_RNIOPND_1_1_LC_11_25_2, my_uart.recv_state_RNIOPND_1_LC_11_25_3, my_uart.rx_countdown_RNIH36N1_0_0_LC_11_25_4, my_uart.rx_countdown_RNIRGTL2_0_LC_11_25_5, my_uart.recv_state_RNIAONE_1_LC_11_25_6, my_uart.rx_countdown_RNI80VC_5_LC_11_25_7 }
+set_location LT_11_25 11 25
+ble_pack my_uart.recv_state_RNO_8_0_LC_11_26_0 { my_uart.recv_state_RNO_8[0], my_uart.rx_countdown_3_cry_0_s1_c }
+ble_pack my_uart.rx_countdown_3_cry_0_s1_c_RNIE18B_LC_11_26_1 { my_uart.rx_countdown_3_cry_0_s1_c_RNIE18B, my_uart.rx_countdown_3_cry_1_s1_c }
+ble_pack my_uart.rx_countdown_3_cry_1_s1_c_RNIG7IL_LC_11_26_2 { my_uart.rx_countdown_3_cry_1_s1_c_RNIG7IL, my_uart.rx_countdown_3_cry_2_s1_c }
+ble_pack my_uart.rx_countdown_3_cry_2_s1_c_RNIIDSF_LC_11_26_3 { my_uart.rx_countdown_3_cry_2_s1_c_RNIIDSF, my_uart.rx_countdown_3_cry_3_s1_c }
+ble_pack my_uart.rx_countdown_3_cry_3_s1_c_RNIKJ6A_LC_11_26_4 { my_uart.rx_countdown_3_cry_3_s1_c_RNIKJ6A, my_uart.rx_countdown_3_cry_4_s1_c }
+ble_pack my_uart.rx_countdown_3_cry_4_s1_c_RNIMPGK_LC_11_26_5 { my_uart.rx_countdown_3_cry_4_s1_c_RNIMPGK }
+ble_pack my_uart.rx_countdown_0_LC_11_26_6 { my_uart.rx_countdown_RNO[0], my_uart.rx_countdown[0] }
+ble_pack my_uart.rx_bits_remaining_RNO_6_3_LC_11_26_7 { my_uart.rx_bits_remaining_RNO_6[3] }
+clb_pack LT_11_26 { my_uart.recv_state_RNO_8_0_LC_11_26_0, my_uart.rx_countdown_3_cry_0_s1_c_RNIE18B_LC_11_26_1, my_uart.rx_countdown_3_cry_1_s1_c_RNIG7IL_LC_11_26_2, my_uart.rx_countdown_3_cry_2_s1_c_RNIIDSF_LC_11_26_3, my_uart.rx_countdown_3_cry_3_s1_c_RNIKJ6A_LC_11_26_4, my_uart.rx_countdown_3_cry_4_s1_c_RNIMPGK_LC_11_26_5, my_uart.rx_countdown_0_LC_11_26_6, my_uart.rx_bits_remaining_RNO_6_3_LC_11_26_7 }
+set_location LT_11_26 11 26
+ble_pack my_uart.recv_state_RNO_0_1_LC_11_27_0 { my_uart.recv_state_RNO_0[1] }
+ble_pack my_uart.recv_state_1_LC_11_27_1 { my_uart.recv_state_RNO[1], my_uart.recv_state[1] }
+ble_pack my_uart.recv_state_RNO_4_1_LC_11_27_2 { my_uart.recv_state_RNO_4[1] }
+ble_pack my_uart.recv_state_RNO_1_1_LC_11_27_3 { my_uart.recv_state_RNO_1[1] }
+ble_pack my_uart.recv_state_RNO_4_2_LC_11_27_4 { my_uart.recv_state_RNO_4[2] }
+ble_pack my_uart.recv_state_RNO_2_2_LC_11_27_5 { my_uart.recv_state_RNO_2[2] }
+ble_pack my_uart.recv_state_RNO_5_1_LC_11_27_6 { my_uart.recv_state_RNO_5[1] }
+ble_pack my_uart.recv_state_RNO_3_1_LC_11_27_7 { my_uart.recv_state_RNO_3[1] }
+clb_pack LT_11_27 { my_uart.recv_state_RNO_0_1_LC_11_27_0, my_uart.recv_state_1_LC_11_27_1, my_uart.recv_state_RNO_4_1_LC_11_27_2, my_uart.recv_state_RNO_1_1_LC_11_27_3, my_uart.recv_state_RNO_4_2_LC_11_27_4, my_uart.recv_state_RNO_2_2_LC_11_27_5, my_uart.recv_state_RNO_5_1_LC_11_27_6, my_uart.recv_state_RNO_3_1_LC_11_27_7 }
+set_location LT_11_27 11 27
+ble_pack my_uart.recv_state_RNO_0_0_LC_11_28_0 { my_uart.recv_state_RNO_0[0] }
+ble_pack my_uart.recv_state_0_LC_11_28_1 { my_uart.recv_state_RNO[0], my_uart.recv_state[0] }
+ble_pack my_uart.recv_state_RNIAONE_0_1_LC_11_28_3 { my_uart.recv_state_RNIAONE_0[1] }
+ble_pack my_uart.recv_state_cnst_2_0__m6_0_18_0_LC_11_28_5 { my_uart.recv_state_cnst_2_0_.m6_0_18_0 }
+clb_pack LT_11_28 { my_uart.recv_state_RNO_0_0_LC_11_28_0, my_uart.recv_state_0_LC_11_28_1, my_uart.recv_state_RNIAONE_0_1_LC_11_28_3, my_uart.recv_state_cnst_2_0__m6_0_18_0_LC_11_28_5 }
+set_location LT_11_28 11 28
+ble_pack my_uart.recv_state_cnst_2_0__m6_0_18_a4_1_2_LC_12_25_0 { my_uart.recv_state_cnst_2_0_.m6_0_18_a4_1_2 }
+ble_pack my_uart.rx_bits_remaining_1_LC_12_25_1 { my_uart.rx_bits_remaining_RNO[1], my_uart.rx_bits_remaining[1] }
+ble_pack my_uart.rx_bits_remaining_0_LC_12_25_3 { my_uart.rx_bits_remaining_RNO[0], my_uart.rx_bits_remaining[0] }
+ble_pack my_uart.rx_bits_remaining_RNINFUH_1_LC_12_25_4 { my_uart.rx_bits_remaining_RNINFUH[1] }
+ble_pack my_uart.rx_bits_remaining_2_LC_12_25_5 { my_uart.rx_bits_remaining_RNO[2], my_uart.rx_bits_remaining[2] }
+clb_pack LT_12_25 { my_uart.recv_state_cnst_2_0__m6_0_18_a4_1_2_LC_12_25_0, my_uart.rx_bits_remaining_1_LC_12_25_1, my_uart.rx_bits_remaining_0_LC_12_25_3, my_uart.rx_bits_remaining_RNINFUH_1_LC_12_25_4, my_uart.rx_bits_remaining_2_LC_12_25_5 }
+set_location LT_12_25 12 25
+ble_pack my_uart.recv_state_2_LC_12_26_0 { my_uart.recv_state_RNO[2], my_uart.recv_state[2] }
+ble_pack my_uart.recv_state_RNO_5_2_LC_12_26_1 { my_uart.recv_state_RNO_5[2] }
+ble_pack my_uart.recv_state_RNO_3_2_LC_12_26_2 { my_uart.recv_state_RNO_3[2] }
+ble_pack my_uart.recv_state_RNO_1_2_LC_12_26_3 { my_uart.recv_state_RNO_1[2] }
+ble_pack my_uart.recv_state_RNIOPND_0_1_LC_12_26_4 { my_uart.recv_state_RNIOPND_0[1] }
+ble_pack my_uart.recv_state_RNO_0_2_LC_12_26_5 { my_uart.recv_state_RNO_0[2] }
+ble_pack RS232_RX_i_ibuf_RNIAONE_LC_12_26_6 { RS232_RX_i_ibuf_RNIAONE }
+ble_pack my_uart.rx_countdown_RNO_1_2_LC_12_26_7 { my_uart.rx_countdown_RNO_1[2] }
+clb_pack LT_12_26 { my_uart.recv_state_2_LC_12_26_0, my_uart.recv_state_RNO_5_2_LC_12_26_1, my_uart.recv_state_RNO_3_2_LC_12_26_2, my_uart.recv_state_RNO_1_2_LC_12_26_3, my_uart.recv_state_RNIOPND_0_1_LC_12_26_4, my_uart.recv_state_RNO_0_2_LC_12_26_5, RS232_RX_i_ibuf_RNIAONE_LC_12_26_6, my_uart.rx_countdown_RNO_1_2_LC_12_26_7 }
+set_location LT_12_26 12 26
+ble_pack my_uart.recv_state_RNO_3_0_LC_12_27_0 { my_uart.recv_state_RNO_3[0] }
+ble_pack my_uart.recv_state_RNO_2_1_LC_12_27_3 { my_uart.recv_state_RNO_2[1] }
+ble_pack my_uart.recv_state_cnst_2_0__m6_0_18_a4_1_LC_12_27_4 { my_uart.recv_state_cnst_2_0_.m6_0_18_a4_1 }
+ble_pack my_uart.recv_state_RNO_2_0_LC_12_27_5 { my_uart.recv_state_RNO_2[0] }
+ble_pack my_uart.recv_state_RNO_7_0_LC_12_27_7 { my_uart.recv_state_RNO_7[0] }
+clb_pack LT_12_27 { my_uart.recv_state_RNO_3_0_LC_12_27_0, my_uart.recv_state_RNO_2_1_LC_12_27_3, my_uart.recv_state_cnst_2_0__m6_0_18_a4_1_LC_12_27_4, my_uart.recv_state_RNO_2_0_LC_12_27_5, my_uart.recv_state_RNO_7_0_LC_12_27_7 }
+set_location LT_12_27 12 27
+set_io LED_o[7] C3
+set_io LED_o[3] A1
+set_io LED_o[6] B3
+set_io LED_o[4] C5
+set_io LED_o[2] A2
+set_io LED_o[0] B5
+set_io CLK_i J3
+set_io RS232_RX_i B10
+set_io LED_o[5] C4
+set_io LED_o[1] B4

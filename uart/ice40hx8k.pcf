@@ -30,4 +30,4 @@ set_io DSRn       B14
 set_io DCDn       B15
 
 ### Pins
-# setio D16_o D16
+setio D16_o D16
