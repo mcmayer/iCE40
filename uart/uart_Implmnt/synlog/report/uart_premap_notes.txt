@@ -1,5 +1,0 @@
-@N: MF248 |Running in 64-bit mode.
-@N: MF666 |Clock conversion enabled 
-@N: BN362 :"y:\projects\ice40hx8k\uart\osdvu\uart.v":78:0:78:5|Removing sequential instance tx_out (in view: work.uart_Z1(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"y:\projects\ice40hx8k\uart\osdvu\uart.v":78:0:78:5|Removing sequential instance tx_data[7:0] (in view: work.uart_Z1(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN225 |Writing default property annotation file Y:\projects\iCE40HX8K\uart\uart_Implmnt\uart.sap.

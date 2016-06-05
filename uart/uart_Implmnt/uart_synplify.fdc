@@ -1,1 +1,0 @@
-#1001 define_clock {p:CLK_i} -name {uart_top|CLK_i} -ref_rise {0.0} -ref_fall {4.901500} -uncertainty {0.000000} -period {9.803000} -clockgroup {Autoconstr_clkgroup_0} -rise {0.0} -fall {4.901500}

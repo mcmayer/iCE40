@@ -1,1 +1,0 @@
-@W: MT420 |Found inferred clock uart_top|CLK_i with period 9.80ns. Please declare a user-defined clock on object "p:CLK_i"
