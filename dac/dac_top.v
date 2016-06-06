@@ -1,3 +1,5 @@
+`include "dac.v"
+
 module dac_top(
     input CLK_i,
     input RSTn_i,
