@@ -1,3 +1,5 @@
+`include "osdvu/uart.v"
+
 module uart_top(
     input CLK_i,
     input RSTn_i,
