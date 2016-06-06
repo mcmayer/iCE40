@@ -1,9 +1,9 @@
-# iCE40HX8K #
+# iCE40HX-8K #
 
 <b style="color:red">Work in progress!</b>
 
 
-[iCE40HX8K breakout board product page][0]
+[iCE40HX-8K breakout board product page][0]
 
 [Project IceStorm][icestorm]
 
@@ -12,6 +12,18 @@
 [Messing with a iCE40HX-8K FPGA][blogospheric].
 
 The [physical constraint file](ice40hx8k.pcf) (pcf).
+
+## Comparison ##
+
+| Board                  | FPGA       | Package | IO  | PLL | Clock | Price |
+|------------------------|------------|---------|-----|:---:|-------|-------|
+| Nandland Go            | iCE40HX-1K | VQ100   |     | 0   | 30MHz |  60$  |
+| iCEstick               | iCE40HX-1K | TQ144   |     | 1   | 12MHz |  26$  |
+| **iCE40HX8K breakout** | iCE40HX-8K | CT256   |     | 2   | 12MHz |  50$  |
+
+The [Zylin ZPU][ZPU] requires at about 2.5k logic cells/500 logic tiles so the
+iCE40HX-1K boards won't suffice for that.
+ 
 
 ## Breakout Board Overview ##
 
@@ -94,20 +106,41 @@ TOTAL: $24.20
  
 
 ## I/O ##
+@todo
 
-	
+## PLL ##
+See the iCE40 sysCLOCK PLL Design and Usage Guide <a href="#ref8">\[8\]</a>.
 
 ## UART ##
 See the folder [uart/](uart).
 
-## Editors / IDEs ##
+## Tools, Editors, IDEs ##
 
 ### Atom (Mac OS X)  ###
-- [APIO IDE for](https://atom.io/packages/apio-ide) [Atom editor](https://atom.io).
-- [https://atom.io/packages/language-verilog](https://atom.io/packages/language-verilog)
+- [*Atom* editor](https://atom.io/) for Mac OS X.
+- The [*linter-verilog*](https://atom.io/packages/linter-verilog) Atom plugin uses [Icarus Verilog](#icarus-verilog).
+- The [*language-verilog*](https://atom.io/packages/language-verilog) plugin adds syntax highlighting and snippets to Verilog files.
 
 ### IDEs ###
 - [APIO Experimental open source micro-ecosystem for open FPGAs](https://github.com/FPGAwars/apio)
+- [APIO IDE for](https://atom.io/packages/apio-ide) [Atom editor](https://atom.io).
+
+### Icarus Verilog ###
+[*Icarus Verilog*](http://iverilog.icarus.com) is a Verilog simulation and synthesis tool. It can parse Verilog 2005 (IEEE 1364-2005).
+Start here: [http://iverilog.wikia.com/wiki/](http://iverilog.wikia.com/wiki/Main_Page). On Mac OS X install with [Homebrew](http://brew.sh):
+
+```bash
+brew install icarus-verilog
+```
+
+### GTKWave ###
+"[*GTKWave*](http://gtkwave.sourceforge.net) is a fully featured GTK+ based wave viewer for Unix, Win32, and Mac OSX which reads LXT, LXT2, VZT, FST, and GHW files as well as standard Verilog VCD/EVCD files and allows their viewing."
+
+On Mac OS X install with [Homebrew](http://brew.sh):
+
+```bash
+brew install homebrew/gui/gtkwave
+```
 
 ## References ##
 
@@ -118,7 +151,8 @@ See the folder [uart/](uart).
 + <a name="ref5"></a>\[5\] Microchip 93LC56 2k 2.5V Microwire Serial EEPROM -  , [page][5], [pdf][5pdf]
 + <a name="ref6"></a>\[6\] Linear Technology LT3030 Dual 750mA/250mA Low Dropout, Low Noise, Micropower Linear Regulator - [page][6], [pdf][6pdf]
 + <a name="ref7"></a>\[7\] Lattice iCE40 LP/HX/LM products [page][2]
-+ <a name="ref8"></a>\[8\] iCE40 Development kits and boards [page][2]
++ <a name="ref8"></a>\[8\] iCE40 Development kits and boards [page][8]
++ <a name="ref9"></a>\[9\] iCE40 sysCLOCK PLL Design and Usage Guide [pdf][PLL]
 
 
 [0]: http://www.latticesemi.com/Products/DevelopmentBoardsAndKits/iCE40HX8KBreakoutBoard.aspx
@@ -134,7 +168,10 @@ See the folder [uart/](uart).
 [6]: http://www.linear.com/product/LT3030
 [6pdf]: http://cds.linear.com/docs/en/datasheet/3030fa.pdf
 [7]: http://www.latticesemi.com/Products/DevelopmentBoardsAndKits.aspx#s=~_d0!2!1!!1!7!0!1!!2!!!0!1!3!2!_d2!fvf%7C%40productitemnames!_d6!353!sbf!ErDrsryrurzqFqxpvtpBpwpqCqxpvspwpypApvtpwpwpqqrzqqqrsr!%40sitecoreorder!_d0!4!Lattice+Development+kits!iCE40+LP/HX/LM!_d1!_d8!!yqHqtFpGpxpvppupxpupvpupwppwpppupKpvpJpIpEpzpBpApCppDpqyprpqsq!
+[8]: http://www.latticesemi.com/breakoutboards#s=~_d0!2!1!!0!1!1!7!!2!!!0!1!2!_d2!3!%40sitecoreorder!_d6!W.+Europe+Standard+Time!661!HrFrsrErDrsryqIqxpvtpGpwpqBqxpvspwpCpApzpvtpwpwpqqryqqqrur!sbf!fvf%7C%40productitemnames!_d0!4!Lattice+Development+kits!iCE40+Ultra+/+UltraLite!iCE40+LP/HX/LM!_d8!_d1!!xqIqtGpHpwpvppupwpupvpupyppypppupLpMpJpKpFpwpBpvpCpzpApEppDpqxpspqrq!
 [icestorm]: http://www.clifford.at/icestorm/
 [runningZPU]: http://sigalrm.blogspot.ch/2014/04/running-zpu-softcore-on-lattice-ice40.html
 [ZPU-lattice]: https://github.com/iabdalkader/zpu-lattice
+[ZPU]: http://opensource.zylin.com/zpu.htm
 [blogospheric]: https://stuartl.longlandclan.id.au/blog/2015/12/06/fpga-fun/
+[PLL]: http://www.latticesemi.com/view_document?document_id=47778
