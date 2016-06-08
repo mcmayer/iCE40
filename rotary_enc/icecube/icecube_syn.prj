@@ -2,7 +2,6 @@
 #-- Project file Y:\projects\iCE40HX8K\rotary_enc\icecube\icecube_syn.prj
 #project files
 
-add_file -verilog -lib work "../rotary_enc.v" 
 add_file -verilog -lib work "../rotary_enc_top.v" 
 #implementation: "icecube_Implmnt"
 impl -add icecube_Implmnt -type fpga

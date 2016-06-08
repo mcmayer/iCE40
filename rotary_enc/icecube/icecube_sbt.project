@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2016.02.27810 - Bui
 ProjectName=icecube
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../rotary_enc.v=work,../rotary_enc_top.v=work
+ProjectVFiles=../rotary_enc_top.v=work
 ProjectCFiles=
 CurImplementation=icecube_Implmnt
 Implementations=icecube_Implmnt
@@ -16,13 +16,13 @@ DeviceFamily=iCE40
 Device=HX8K
 DevicePackage=CT256
 DevicePower=
-NetlistFile=
+NetlistFile=icecube_Implmnt/icecube.edf
 AdditionalEDIFFile=
 IPEDIFFile=
-DesignLib=
-DesignView=
-DesignCell=
-SynthesisSDCFile=
+DesignLib=icecube_Implmnt/sbt/netlist/oadb-rotary_enc_top
+DesignView=_rt
+DesignCell=rotary_enc_top
+SynthesisSDCFile=icecube_Implmnt/icecube.scf
 UserPinConstraintFile=
 UserSDCFile=
 PhysicalConstraintFile=../rotary_enc.pcf
