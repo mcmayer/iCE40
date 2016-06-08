@@ -5,5 +5,7 @@
 
 ## Using TDCs ##
 Much more interesting.
-[200 MS/s ADC implemented in a FPGA employing TDCs](http://cas.tudelft.nl/pubs/Homulle15fpga.pdf).
-[FPGA ADC design](http://cas.tudelft.nl/fpga_tdc/ADC_basic.html).
+
+- [A 17ps Time-to-Digital Converter Implemented in 65nm FPGA Technology](https://infoscience.epfl.ch/record/139431/files/isfpga09-cfavi.pdf).
+- [200 MS/s ADC implemented in a FPGA employing TDCs](http://cas.tudelft.nl/pubs/Homulle15fpga.pdf), from [TU Delft web page](http://cas.tudelft.nl/fpga_tdc/ADC_basic.html).
+- [Low resource FPGA-based Time to Digital Converter](http://arxiv.org/vc/arxiv/papers/1206/1206.0679v3.pdf).
