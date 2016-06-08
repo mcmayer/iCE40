@@ -1,4 +1,13 @@
 .DS_Store
+.vdbs
 *.log
 *.log.bak
 *.tcl
+*.twr
+*_prim.v
+*.arearep
+xxx_lse_cp_file_list
+xxx_lse_sign_file
+*.prd
+*.rpt
+*_Implmnt
