@@ -22,6 +22,8 @@ RC = 0.15µs, <br/>
 1/(2 pi sqrt(LC)) = 7.3MHz
 </center>
 
+
+[youtube video](https://www.youtube.com/embed/0zA43rOaXOI)
 <figure>
 <div style="text-align: center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0zA43rOaXOI" frameborder="0" allowfullscreen style="align-content: center"></iframe>
