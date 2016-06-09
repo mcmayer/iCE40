@@ -1,0 +1,27 @@
+###################################
+# Physical constraints file (pcf) #
+# for iCE40HX8K-CT256             #
+###################################
+
+
+### Clock
+set_io CLK_i J3
+
+### LEDs
+set_io LED_o[0] B5
+set_io LED_o[1] B4
+set_io LED_o[2] A2
+set_io LED_o[3] A1
+set_io LED_o[4] C5
+set_io LED_o[5] C4
+set_io LED_o[6] B3
+set_io LED_o[7] C3
+
+### Reset
+set_io RSTn_i C16 -pullup yes
+
+### Pins
+set_io B16_i B16 -pullup yes
+set_io D14_i D14 -pullup yes
+set_io D15_i D15 -pullup yes
+set_io D16_o D16 -pulldown yes
