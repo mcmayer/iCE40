@@ -16,6 +16,16 @@
 | [TFDU4101][7] | [pdf][7pdf] | Infrared Transceiver Module | | [5.46](http://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/TFDU4101-TT3/751-1071-1-ND/1681421) |
 
 small quantity prices TOTAL: $22.59
+
+## IceCube new project ##
+
+For some reason the IOBank voltages have to be set to 2.5V.
+<figure>
+<div style="text-align: center">
+<img src="images/iCEstick-new-project.png" width="386" />
+<figcaption>Fig1. - IceCube settings.</figcaption>
+</div>
+</figure>
  
  
 ## References ##

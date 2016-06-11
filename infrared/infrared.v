@@ -4,7 +4,6 @@ module infrared_top(
     input wire RXD_i,
     output wire SD_o,
     output wire PMOD_1,
-    output wire PMOD_2,
     output wire [0:4] LED_o
     );
 
@@ -26,10 +25,7 @@ module infrared_top(
         end
     end
 
-    assign out = counter[5];
-
-    assign PMOD_2 = RXD_i;
-    assign PMOD_1 = out;
+    assign PMOD_1 = RXD_i;
     assign TXD_o = 0;
     assign SD_o = 0;
     assign LED_o[4] = 1;
