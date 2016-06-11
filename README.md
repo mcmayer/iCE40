@@ -108,11 +108,23 @@ TOTAL: $24.20
 ## I/O ##
 @todo
 
+## Rotary encoder ##
+See the folder [rotary_enc/](rotary_enc).
+
+## Infrared ##
+See the folder [infrared/](infrared).
+
 ## PLL ##
 See the iCE40 sysCLOCK PLL Design and Usage Guide <a href="#ref8">\[8\]</a>.
 
 ## UART ##
 See the folder [uart/](uart).
+
+## DAC ##
+See the folder [dac/](dac).
+
+## ADC ##
+See the folder [adc/](adc).
 
 ## Tools, Editors, IDEs ##
 
@@ -153,6 +165,9 @@ brew install homebrew/gui/gtkwave
 + <a name="ref7"></a>\[7\] Lattice iCE40 LP/HX/LM products [page][2]
 + <a name="ref8"></a>\[8\] iCE40 Development kits and boards [page][8]
 + <a name="ref9"></a>\[9\] iCE40 sysCLOCK PLL Design and Usage Guide [pdf][PLL]
++ <a name="ref10"></a>\[10\] iCEcube2 Design Software [page][icecube]
++ <a name="ref11"></a>\[11\] iCEcube2 2016-02 Tutorial [pdf][icecube_tut]
+
 
 
 [0]: http://www.latticesemi.com/Products/DevelopmentBoardsAndKits/iCE40HX8KBreakoutBoard.aspx
@@ -175,3 +190,11 @@ brew install homebrew/gui/gtkwave
 [ZPU]: http://opensource.zylin.com/zpu.htm
 [blogospheric]: https://stuartl.longlandclan.id.au/blog/2015/12/06/fpga-fun/
 [PLL]: http://www.latticesemi.com/view_document?document_id=47778
+[icecube]: http://www.latticesemi.com/en/Products/DesignSoftwareAndIP/FPGAandLDS/iCEcube2.aspx
+[icecube_tut]: http://www.latticesemi.com/view_document?document_id=51526
+
+-------------------------------------------------------------------------------
+<div style="text-align:right">
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+&copy; <a href="http://mcmayer.net">Markus Mayer</a>
+</div>
