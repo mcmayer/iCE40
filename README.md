@@ -23,6 +23,8 @@ The [physical constraint file](ice40hx8k.pcf) (pcf).
 
 The [Zylin ZPU][ZPU] requires at about 2.5k logic cells/500 logic tiles so the
 iCE40HX-1K boards won't suffice for that.
+
+Also interesting: [Dipsy](http://dipsy.cool) sub-5$ UL1K breakout board.
  
 
 ## Breakout Board Overview ##
