@@ -15,9 +15,9 @@
 
 The data can be found in [measurements-data.R](measurements-data.R).
 
-0.258ns / invert
+258ps / invert
 
-0.236ns / and
+236ps / and
 
 
 
@@ -57,3 +57,8 @@ socillating signal with a 1000 carry blocks delay.</figcaption>
 </div>
 <figcaption>Fig 4. - Floor planner result, the carry blocks are nicely liend up.</figcaption>
 </figure>
+
+## Todo ##
+
+- Wave Union TDC: See "[The 10-ps Wave Union TDC: Improving FPGA
+TDC Resolution beyond Its Cell Delay](http://lss.fnal.gov/archive/2008/conf/fermilab-conf-08-498-e.pdf)" by *Jinyuan Wu* and *Zonghan Shi* .
