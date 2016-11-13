@@ -1,0 +1,39 @@
+###################################
+# Physical constraints file (pcf) #
+# for iCEstick                    #
+# iCE40HX1K TQ144                 #
+###################################
+
+## 12 MHz clock
+set_io CLK_i 21
+
+## Red LEDs
+set_io LED_o[0] 99    # red LED D1 (top)
+set_io LED_o[1] 98    # red LED D2 (right)
+set_io LED_o[2] 97    # red LED D3 (bottom)
+set_io LED_o[3] 96    # red LED D4 (left)
+set_io LED_o[4] 95    # green LED D5 (center)
+
+## IrDA port
+set_io TXD_o 105
+set_io RXD_i 106
+set_io SD_o  107      # shutdown
+
+## Pmod 2x6 connector (J2)
+set_io PMOD_1   78
+set_io PMOD_2   79
+set_io PMOD_3   80
+set_io PMOD_4   81
+set_io PMOD_6   87
+set_io PMOD_8   88
+set_io PMOD_9   90
+set_io PMOD_10  91
+
+## UART (FTDI channel B)
+set_io DCDn 1
+set_io DSRn 2
+set_io DTRn 3
+set_io CTSn 4
+set_io RTSn 7
+set_io RS232_TX_o 8
+set_io RS232_RX_i 9

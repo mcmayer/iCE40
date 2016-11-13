@@ -1,0 +1,29 @@
+# ##############################################################################
+
+# iCEcube PCF
+
+# Version:            2012.09SP1.22498
+
+# File Generated:     May 1 2013 11:36:30
+
+# Family & Device:    iCE40HX1K
+
+# Package:            TQ144
+
+# ##############################################################################
+
+###IOSet List 6
+set_io LED_o[0] 99
+set_io LED_o[2] 97
+set_io LED_o[4] 95
+set_io CLK_i 21
+set_io LED_o[1] 98
+set_io LED_o[3] 96
+
+## IrDA port
+set_io TXD_o 105
+set_io RXD_i 106
+set_io SD_o  107      # shutdown
+
+set_io PMOD_1   78
+set_io PMOD_2   79
