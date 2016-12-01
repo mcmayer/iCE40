@@ -1,8 +1,8 @@
 #-- Synopsys, Inc.
 #-- Project file Y:\projects\iCE40HX8K\infrared\icecube\icecube_syn.prj
 #project files
-add_file -verilog -lib work "../infrared.v"
 
+add_file -verilog -lib work "../infrared.v" 
 #implementation: "icecube_Implmnt"
 impl -add icecube_Implmnt -type fpga
 
@@ -52,5 +52,5 @@ set_option -write_apr_constraint 1
 project -result_format "edif"
 project -result_file ./icecube_Implmnt/icecube.edf
 project -log_file "./icecube_Implmnt/icecube.srr"
-impl -active "icecube_Implmnt"
+impl -active icecube_Implmnt
 project -run synthesis -clean

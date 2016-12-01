@@ -1,15 +1,43 @@
 [Project]
 ProjectVersion=2.0
 Version=Lattice Semiconductor Corporation iCEcube - Release: 2016.02.27810 - Build Date: Jan 28 2016 18:12:42
-ProjectName=uart
+ProjectName=blinky
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=uart_top.v=work,osdvu/uart.v=work
+ProjectVFiles=blinky.v
 ProjectCFiles=
-CurImplementation=uart_Implmnt
-Implementations=uart_Implmnt
+CurImplementation=blinky_Implmnt
+Implementations=blinky_Implmnt
 StartFromSynthesis=yes
 IPGeneration=false
+
+[blinky_Implmnt]
+DeviceFamily=iCE40
+Device=HX8K
+DevicePackage=CT256
+DevicePower=
+NetlistFile=blinky_Implmnt/blinky.edf
+AdditionalEDIFFile=
+IPEDIFFile=
+DesignLib=blinky_Implmnt/sbt/netlist/oadb-blinky_top
+DesignView=_rt
+DesignCell=blinky_top
+SynthesisSDCFile=blinky_Implmnt/blinky.scf
+UserPinConstraintFile=
+UserSDCFile=
+PhysicalConstraintFile=ice40hx8k.pcf
+BackendImplPathName=
+Devicevoltage=1.14
+DevicevoltagePerformance=+/-5%(datasheet default)
+DeviceTemperature=85
+TimingAnalysisBasedOn=Worst
+OperationRange=Commercial
+TypicalCustomTemperature=25
+WorstCustomTemperature=85
+BestCustomTemperature=0
+IOBankVoltages=topBank,2.5 bottomBank,2.5 leftBank,2.5 rightBank,2.5
+derValue=0.701346
+TimingPathNumberStick=0
 
 [lse options]
 CarryChain=True
@@ -56,32 +84,4 @@ BitmapSetNoUsedIONoPullup=no
 FloorPlannerShowFanInNets=yes
 FloorPlannerShowFanOutNets=yes
 HookTo3rdPartyTextEditor=
-
-[uart_Implmnt]
-DeviceFamily=iCE40
-Device=HX8K
-DevicePackage=CT256
-DevicePower=
-NetlistFile=
-AdditionalEDIFFile=
-IPEDIFFile=
-DesignLib=uart_Implmnt/sbt/netlist/oadb-uart_top
-DesignView=
-DesignCell=uart_top
-SynthesisSDCFile=Y:/projects/iCE40HX8K/uart/uart_Implmnt/uart.scf
-UserPinConstraintFile=
-UserSDCFile=
-PhysicalConstraintFile=ice40hx8k.pcf
-BackendImplPathName=
-Devicevoltage=1.14
-DevicevoltagePerformance=+/-5%(datasheet default)
-DeviceTemperature=85
-TimingAnalysisBasedOn=Worst
-OperationRange=Commercial
-TypicalCustomTemperature=25
-WorstCustomTemperature=85
-BestCustomTemperature=0
-IOBankVoltages=topBank,3.3 bottomBank,3.3 leftBank,3.3 rightBank,3.3
-derValue=0.701346
-TimingPathNumberStick=0
 
