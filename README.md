@@ -28,10 +28,16 @@ The physical constraint file for the iCE40HX8K Breakout board: [ice40hx8k.pcf](i
 | [**Olimex iCE40HX8K-EVB**](https://www.cnx-software.com/2017/06/23/olimex-introduces-40-euros-ice40hx8k-evb-board-with-lattice-ice40-fpga/) | iCE40HX-8K | CT256   | >80  |  2   |        | 50$   |
 | [**iCE40HX8K breakout**](http://www.latticesemi.com/Products/DevelopmentBoardsAndKits/iCE40HX8KBreakoutBoard.aspx) | iCE40HX-8K | CT256   | ~40  |  2   | 12MHz  | 50$   |
 
-The [Zylin ZPU][ZPU] requires at about 2.5k logic cells/500 logic tiles so the
-iCE40HX-1K boards won't suffice for that.
+A (incomplete) list is mainatained by [Lattice](http://www.latticesemi.com/en/Products/DevelopmentBoardsAndKits/#s=~_d0!2!1!!1!7!0!1!!2!!!1!0!2!_d2!fvf%7C%40productitemnames!_d6!sbf!239!W.+Europe+Standard+Time!DqCqsqxqFqsqyrErwputpApvprBrwpuspvpxpzputpvpvprrqyrrrqsq!%40sitecoreorder!_d0!4!Lattice+Development+kits!_d1!iCE40+LP/HX/LM!3!_d8!!xqHqtFpGpupwppvpwpvpuppKpppvpLpupIpJpEpypBpzpApCppDpqxprpqsq!).
 
-Also interesting: [Dipsy](http://dipsy.cool) sub-5$ UL1K breakout board.
+Notes: 
+
+- The [Zylin ZPU][ZPU] requires at about 2.5k logic cells/500 logic tiles so the iCE40HX-1K boards won't suffice for that.
+
+Also interesting
+
+- [Dipsy](http://dipsy.cool) sub-5$ UL1K breakout board.
+- [UPDuino](http://gnarlygrey.atspace.cc/development-platform.html#upduino) Lattice iCE40-UP5K UltraPlus FPGA, 5.3k LUTs, 34 GPIO, 8$. (Within the iCE40 family the UP devices stand out because they have DSP blocks, hard SPI/I2C blocks, internal oscillators and 1MB SRAM. [Project Icestorm](http://www.clifford.at/icestorm/) has experimental support.)
 
 
 ## Breakout Board Overview ##
