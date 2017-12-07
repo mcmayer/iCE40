@@ -5,7 +5,7 @@
 The iCE40 family of FPGAs by *Lattice Semiconductor* is quite interesting for beginners:
 
 - Relatively cheap dev boards are available.
-- 1k-8k LUTs is enough to do some some interesting things, even run a soft CPU.
+- 1k-8k LUTs is enough to do some some interesting things, even run a soft CPU like the [Zylin ZPU][ZPU]  or small [RISC-V implementations](https://github.com/cliffordwolf/picorv32).
 - Lattice's ["iCEcube2"](http://www.latticesemi.com/iCEcube2) design software is freely available.
 - There's an opensource toolchain! Clifford Wolf managed to reverse engineer the bitstream and build up the toolchain. See [http://www.clifford.at/icestorm/](http://www.clifford.at/icestorm/).
 
@@ -30,6 +30,7 @@ The physical constraint file for the iCE40HX8K Breakout board: [ice40hx8k.pcf](i
 | [iCEstick](http://www.latticesemi.com/icestick) | iCE40HX-1K | TQ144   |      |  1   | 12MHz  | 26$   |
 | [Olimex iCE40HX1K-EVB](https://www.olimex.com/Products/FPGA/iCE40/iCE40HX1K-EVB/open-source-hardware) | iCE40HX-1K | VQ100   |      |  1   | 100MHz | 26$   |
 | [*myStorm* board](https://folknologylabs.wordpress.com/2016/07/30/brewing-up-a-storm/) | iCE40HX-4K |         |      |      |        | 30$   |
+| [**icoBoard**](http://icoboard.org/)     | iCE40HX-8K |         |      |      |        | 130$  |
 | [**Olimex iCE40HX8K-EVB**](https://www.cnx-software.com/2017/06/23/olimex-introduces-40-euros-ice40hx8k-evb-board-with-lattice-ice40-fpga/) | iCE40HX-8K | CT256   | >80  |  2   |        | 50$   |
 | [**iCE40HX8K breakout**](http://www.latticesemi.com/Products/DevelopmentBoardsAndKits/iCE40HX8KBreakoutBoard.aspx) | iCE40HX-8K | CT256   | ~40  |  2   | 12MHz  | 50$   |
 
@@ -37,6 +38,7 @@ A (incomplete) list is mainatained by [Lattice](http://www.latticesemi.com/en/Pr
 
 Notes: 
 
+- The *icoBoard* is designed as a FPGA based IO board for RaspberryPi. Most notably it has 8MBit of SRAM.
 - The [Zylin ZPU][ZPU] requires at about 2.5k logic cells/500 logic tiles so the iCE40HX-1K boards won't suffice for that.
 
 Also interesting
