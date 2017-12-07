@@ -2,14 +2,20 @@
 
 <b style="color:red">This is work in progress!</b>
 
+The iCE40 family of FPGAs by *Lattice Semiconductor* is quite interesting for beginners:
+
+- Relatively cheap dev boards are available.
+- 1k-8k LUTs is enough to do some some interesting things, even run a soft CPU.
+- There's an opensource toolchain! Clifford Wolf managed to reverse engineer the bitstream and build up the toolchain. See [http://www.clifford.at/icestorm/](http://www.clifford.at/icestorm/).
+
 References:	
 
 - [iCE40HX-8K breakout board product page][0]
 - [Project IceStorm][icestorm]
-- [Run ZPU][runningZPU], [source code][ZPU-lattice]
+- [Running ZPU Softcore on Lattice ICE40][runningZPU], [source code][ZPU-lattice]
 - [Messing with a iCE40HX-8K FPGA][blogospheric].
 
-The [physical constraint file](ice40hx8k.pcf) (pcf).
+The physical constraint file for the iCE40HX8K Breakout board: [ice40hx8k.pcf](ice40hx8k.pcf)
 
 ## Comparison ##
 
@@ -128,6 +134,8 @@ See the folder [dac/](dac).
 
 ## ADC ##
 See the folder [adc/](adc).
+
+@TODO
 
 ## Tools, Editors, IDEs ##
 
