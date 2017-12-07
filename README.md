@@ -8,7 +8,7 @@ The iCE40 family of FPGAs by *Lattice Semiconductor* is quite interesting for be
 - 1k-8k LUTs is enough to do some some interesting things, even run a soft CPU.
 - There's an opensource toolchain! Clifford Wolf managed to reverse engineer the bitstream and build up the toolchain. See [http://www.clifford.at/icestorm/](http://www.clifford.at/icestorm/).
 
-References:	
+  References:
 
 - [iCE40HX-8K breakout board product page][0]
 - [Project IceStorm][icestorm]
@@ -37,7 +37,7 @@ Notes:
 Also interesting
 
 - [Dipsy](http://dipsy.cool) sub-5$ UL1K breakout board.
-- [UPDuino](http://gnarlygrey.atspace.cc/development-platform.html#upduino) Lattice iCE40-UP5K UltraPlus FPGA, 5.3k LUTs, 34 GPIO, 8$. (Within the iCE40 family the UP devices stand out because they have DSP blocks, hard SPI/I2C blocks, internal oscillators and 1MB SRAM. [Project Icestorm](http://www.clifford.at/icestorm/) has experimental support.)
+- [UPDuino](http://gnarlygrey.atspace.cc/development-platform.html#upduino) Lattice iCE40-UP5K UltraPlus FPGA, 5.3k LUTs, 34 GPIO, 8$. (Within the iCE40 family the UP devices stand out because they have DSP blocks, hard SPI/I2C blocks, internal oscillators and 1MBit SRAM. [Project Icestorm](http://www.clifford.at/icestorm/) has experimental support.)
 
 
 ## Breakout Board Overview ##
