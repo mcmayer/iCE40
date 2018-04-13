@@ -1,31 +1,51 @@
 # iCE40HX-8K #
 
-<b style="color:red">Work in progress!</b>
+<b style="color:red">This is work in progress!</b>
+
+The iCE40 family of FPGAs by *Lattice Semiconductor* is quite interesting for beginners:
+
+- Relatively cheap dev boards are available.
+- 1k-8k LUTs is enough to do some some interesting things, even run a soft CPU like the [Zylin ZPU][ZPU]  or small [RISC-V implementations](https://github.com/cliffordwolf/picorv32).
+- Lattice's ["iCEcube2"](http://www.latticesemi.com/iCEcube2) design software is freely available.
+- There's an opensource toolchain! Clifford Wolf managed to reverse engineer the bitstream and build up the toolchain. See [http://www.clifford.at/icestorm/](http://www.clifford.at/icestorm/).
 
 
-[iCE40HX-8K breakout board product page][0]
+References:
 
-[Project IceStorm][icestorm]
+- [iCE40HX-8K breakout board product page][0]
 
-[Run ZPU][runningZPU], [source code][ZPU-lattice]
+- [Project IceStorm][icestorm]
 
-[Messing with a iCE40HX-8K FPGA][blogospheric].
+- [Running ZPU Softcore on Lattice ICE40][runningZPU], [source code][ZPU-lattice]
 
-The [physical constraint file](ice40hx8k.pcf) (pcf).
+- [Messing with a iCE40HX-8K FPGA][blogospheric].
+
+The physical constraint file for the iCE40HX8K Breakout board: [ice40hx8k.pcf](ice40hx8k.pcf)
 
 ## Comparison ##
 
-| Board                  | FPGA       | Package | IO  | PLL | Clock | Price |
-|------------------------|------------|---------|-----|:---:|-------|-------|
-| Nandland Go            | iCE40HX-1K | VQ100   |     | 0   | 30MHz |  60$  |
-| iCEstick               | iCE40HX-1K | TQ144   |     | 1   | 12MHz |  26$  |
-| **iCE40HX8K breakout** | iCE40HX-8K | CT256   |     | 2   | 12MHz |  50$  |
+| Board                                    | FPGA       | Package | IO   | PLL  | Clock  | Price |
+| ---------------------------------------- | ---------- | ------- | ---- | :--: | ------ | ----- |
+| [Nandland Go](https://www.nandland.com/goboard/introduction.html) | iCE40HX-1K | VQ100   |      |  0   | 30MHz  | 60$   |
+| [iCEstick](http://www.latticesemi.com/icestick) | iCE40HX-1K | TQ144   |      |  1   | 12MHz  | 26$   |
+| [Olimex iCE40HX1K-EVB](https://www.olimex.com/Products/FPGA/iCE40/iCE40HX1K-EVB/open-source-hardware) | iCE40HX-1K | VQ100   |      |  1   | 100MHz | 26$   |
+| [*myStorm* board](https://folknologylabs.wordpress.com/2016/07/30/brewing-up-a-storm/) | iCE40HX-4K |         |      |      |        | 30$   |
+| [**icoBoard**](http://icoboard.org/)     | iCE40HX-8K |         |      |      |        | 130$  |
+| [**Olimex iCE40HX8K-EVB**](https://www.cnx-software.com/2017/06/23/olimex-introduces-40-euros-ice40hx8k-evb-board-with-lattice-ice40-fpga/) | iCE40HX-8K | CT256   | >80  |  2   |        | 50$   |
+| [**iCE40HX8K breakout**](http://www.latticesemi.com/Products/DevelopmentBoardsAndKits/iCE40HX8KBreakoutBoard.aspx) | iCE40HX-8K | CT256   | ~40  |  2   | 12MHz  | 50$   |
 
-The [Zylin ZPU][ZPU] requires at about 2.5k logic cells/500 logic tiles so the
-iCE40HX-1K boards won't suffice for that.
+A (incomplete) list is mainatained by [Lattice](http://www.latticesemi.com/en/Products/DevelopmentBoardsAndKits/#s=~_d0!2!1!!1!7!0!1!!2!!!1!0!2!_d2!fvf%7C%40productitemnames!_d6!sbf!239!W.+Europe+Standard+Time!DqCqsqxqFqsqyrErwputpApvprBrwpuspvpxpzputpvpvprrqyrrrqsq!%40sitecoreorder!_d0!4!Lattice+Development+kits!_d1!iCE40+LP/HX/LM!3!_d8!!xqHqtFpGpupwppvpwpvpuppKpppvpLpupIpJpEpypBpzpApCppDpqxprpqsq!).
 
-Also interesting: [Dipsy](http://dipsy.cool) sub-5$ UL1K breakout board.
- 
+Notes: 
+
+- The *icoBoard* is designed as a FPGA based IO board for RaspberryPi. Most notably it has 8MBit of SRAM.
+- The [Zylin ZPU][ZPU] requires at about 2.5k logic cells/500 logic tiles so the iCE40HX-1K boards won't suffice for that.
+
+Also interesting
+
+- [Dipsy](http://dipsy.cool) sub-5$ UL1K breakout board.
+- [UPDuino](http://gnarlygrey.atspace.cc/development-platform.html#upduino) Lattice iCE40-UP5K UltraPlus FPGA, 5.3k LUTs, 34 GPIO, 8$. (Within the iCE40 family the UP devices stand out because they have DSP blocks, hard SPI/I2C blocks, internal oscillators and 1MBit SRAM. [Project Icestorm](http://www.clifford.at/icestorm/) has experimental support.)
+
 
 ## Breakout Board Overview ##
 
@@ -57,15 +77,15 @@ The images are taken from [\[1\]](#ref1).
 Channel B of the FT2232H has a UART interface that is connectected to 
 bank 0 of the iCE40:
 
-| UART (FTDI Channel B)   | Pin |
-|-------------------------|-----|
-| `RS232_Rx_TTL`          | B12 |
-| `RS232_Tx_TTL`          | B10 |
-| `RTSn`                  | B13 |
-| `CTSn`                  | A15 |
-| `DTRn`                  | A16 |
-| `DSRn`                  | B14 |
-| `DCDn`                  | B15 |
+| UART (FTDI Channel B) | Pin  |
+| --------------------- | ---- |
+| `RS232_Rx_TTL`        | B12  |
+| `RS232_Tx_TTL`        | B10  |
+| `RTSn`                | B13  |
+| `CTSn`                | A15  |
+| `DTRn`                | A16  |
+| `DSRn`                | B14  |
+| `DCDn`                | B15  |
 
 Note that `RX` and `TX` are from the point of view of the FT2232H.
 
@@ -73,38 +93,38 @@ Note that `RX` and `TX` are from the point of view of the FT2232H.
 
 The board has 16 testpoints.
 
-| TP#    | Description |
-|-------:|-------------|
-|  TP1   | `3V3` |
-|  TP2   | `1V2` |
-|  TP3   | `GND` |
-|  TP4   | `VCCIO0` |
-|  TP5   | `VCCIO0` after pullup  |
-|  TP6   | `PLLVCC0` |
-|  TP7   | `PLLVCC0` after pullup |
-|  TP8   | `VCCIO1` |
-|  TP9   | `VCCIO1` after pullup |
-| TP10   | `VCCIO2` |
-| TP11   | `VCCIO2` after pullup |
-| TP12   | `PLLVCC2` |
-| TP13   | `PLLVCC2` after pullup |
-| TP14   | `VCCIO3` |
-| TP15   | `VCCIO3` after pullup |
-| TP16   | `CRESET_B` |
+|  TP# | Description            |
+| ---: | ---------------------- |
+|  TP1 | `3V3`                  |
+|  TP2 | `1V2`                  |
+|  TP3 | `GND`                  |
+|  TP4 | `VCCIO0`               |
+|  TP5 | `VCCIO0` after pullup  |
+|  TP6 | `PLLVCC0`              |
+|  TP7 | `PLLVCC0` after pullup |
+|  TP8 | `VCCIO1`               |
+|  TP9 | `VCCIO1` after pullup  |
+| TP10 | `VCCIO2`               |
+| TP11 | `VCCIO2` after pullup  |
+| TP12 | `PLLVCC2`              |
+| TP13 | `PLLVCC2` after pullup |
+| TP14 | `VCCIO3`               |
+| TP15 | `VCCIO3` after pullup  |
+| TP16 | `CRESET_B`             |
 
 
 ## Hardware ##
 
-| Component | Datasheet | Description | Package | Price |
-|:----------|:---------:|:--------|:------------|------:|
+| Component                         |  Datasheet  | Description                              | Package   |                                    Price |
+| :-------------------------------- | :---------: | :--------------------------------------- | :-------- | ---------------------------------------: |
 | [LatticeSemi iCE40HX-8K CT256][2] | [pdf][2pdf] | FPGA, 7'680 logic cells, 128kbit RAM, 206 I/O | 256-LFBGA | [12.78](http://www.digikey.com/product-detail/en/lattice-semiconductor-corporation/ICE40HX8K-CT256/220-1575-ND/3083585) |
-| [FTDI 2232HL][3] | [pdf][3pdf] | High Speed USB | 64-LQFP | [3.70](http://www.digikey.com/product-detail/en/ftdi-future-technology-devices-international-ltd/FT2232HL-REEL/768-1024-2-ND/1986053) |
-| [Micron N25Q032A13ESC40][4] | [pdf][4pdf] | 32Mb, 3V, Multiple I/O Serial Flash Memory | SO8 | [0.50](http://www.digikey.com/product-detail/en/micron-technology-inc/N25Q032A13ESC40F/N25Q032A13ESC40F-ND/4072513) |
-| [Microchip 93LC56][5]  | [pdf][5pdf] | 2k 2.5V Microwire Serial EEPROM | SO8 | [0.24](http://www.digikey.com/product-detail/en/microchip-technology/93LC56C-I-SN/93LC56C-I-SN-ND/572796)  ||
-| [Linear Technology LT3030][6] | [pdf][6pdf] | Dual Linear Regulator | 20-TSSOP| [6.98](http://www.digikey.com/product-search/en?keywords=LT3030EFE%23TRPBF) |
+| [FTDI 2232HL][3]                  | [pdf][3pdf] | High Speed USB                           | 64-LQFP   | [3.70](http://www.digikey.com/product-detail/en/ftdi-future-technology-devices-international-ltd/FT2232HL-REEL/768-1024-2-ND/1986053) |
+| [Micron N25Q032A13ESC40][4]       | [pdf][4pdf] | 32Mb, 3V, Multiple I/O Serial Flash Memory | SO8       | [0.50](http://www.digikey.com/product-detail/en/micron-technology-inc/N25Q032A13ESC40F/N25Q032A13ESC40F-ND/4072513) |
+| [Microchip 93LC56][5]             | [pdf][5pdf] | 2k 2.5V Microwire Serial EEPROM          | SO8       | [0.24](http://www.digikey.com/product-detail/en/microchip-technology/93LC56C-I-SN/93LC56C-I-SN-ND/572796) |
+| [Linear Technology LT3030][6]     | [pdf][6pdf] | Dual Linear Regulator                    | 20-TSSOP  | [6.98](http://www.digikey.com/product-search/en?keywords=LT3030EFE%23TRPBF) |
 
 TOTAL: $24.20
- 
+
  
 
 ## I/O ##
@@ -128,12 +148,15 @@ See the folder [dac/](dac).
 ## ADC ##
 See the folder [adc/](adc).
 
+@TODO
+
 ## Tools, Editors, IDEs ##
 
 ### Atom (Mac OS X)  ###
 - [*Atom* editor](https://atom.io/) for Mac OS X.
-- The [*linter-verilog*](https://atom.io/packages/linter-verilog) Atom plugin uses [Icarus Verilog](#icarus-verilog).
-- The [*language-verilog*](https://atom.io/packages/language-verilog) plugin adds syntax highlighting and snippets to Verilog files.
+  - The [*linter-verilog*](https://atom.io/packages/linter-verilog) Atom plugin uses [Icarus Verilog](#icarus-verilog).
+  - The [*language-verilog*](https://atom.io/packages/language-verilog) plugin adds syntax highlighting and snippets to Verilog files.
+- [*Visual Studio Code*](https://code.visualstudio.com/) is catching up but not quite there, yet (Dec 2017). E.g. there's no Icarus Verilog integration in any of the [Verilog addins](https://marketplace.visualstudio.com/search?term=verilog&target=VSCode), yet.
 
 ### IDEs ###
 - [APIO Experimental open source micro-ecosystem for open FPGAs](https://github.com/FPGAwars/apio)
