@@ -7,81 +7,26 @@
 		<Device>
 			<SelectedProg value="TRUE"/>
 			<Pos>1</Pos>
-			<Vendor>Micron</Vendor>
+			<Vendor>Lattice</Vendor>
 			<Family>iCE40</Family>
-			<Name>iCE40HX8K</Name>
+			<Name>iCE40HX4K</Name>
+			<IDCode>0x11008639</IDCode>
 			<Package>All</Package>
+			<PON>iCE40HX4K</PON>
 			<Bypass>
 				<InstrLen>8</InstrLen>
 				<InstrVal>11111111</InstrVal>
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>Y:/projects/iCE40HX8K/blinky/blinky/blinky_Implmnt/sbt/outputs/bitmap/blinky_top_bitmap.bin</File>
-			<FileTime>12/01/16 13:56:29</FileTime>
-			<Operation>SPI Flash Erase,Program,Verify</Operation>
+			<File>Y:/projects/epd-dev/blinky/blinky_Implmnt/sbt/outputs/bitmap/blinky_top_bitmap.bin</File>
+			<FileTime>12/08/16 18:42:46</FileTime>
+			<Operation>Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
-				<AccessMode>SPI Flash Programming</AccessMode>
+				<IOState>HighZ</IOState>
+				<AccessMode>CRAM</AccessMode>
 			</Option>
-			<FPGALoader>
-			<CPLDDevice>
-				<Device>
-					<Pos>1</Pos>
-					<Vendor>Lattice</Vendor>
-					<Family>iCE40</Family>
-					<Name>iCE40HX8K</Name>
-					<IDCode>0x11008639</IDCode>
-					<Package>All</Package>
-					<PON>iCE40HX8K</PON>
-					<Bypass>
-						<InstrLen>8</InstrLen>
-						<InstrVal>11111111</InstrVal>
-						<BScanLen>1</BScanLen>
-						<BScanVal>0</BScanVal>
-					</Bypass>
-					<Operation>Bypass</Operation>
-					<Option>
-						<SVFVendor>JTAG STANDARD</SVFVendor>
-						<IOState>HighZ</IOState>
-						<AccessMode>JTAG</AccessMode>
-					</Option>
-				</Device>
-			</CPLDDevice>
-			<FlashDevice>
-				<Device>
-					<Pos>1</Pos>
-					<Vendor>Micron</Vendor>
-					<Family>SPI Serial Flash</Family>
-					<Name>SPI-N25Q032A</Name>
-					<IDCode>0x16</IDCode>
-					<Package>8-pin VDFPN8</Package>
-					<Operation>SPI Flash Erase,Program,Verify</Operation>
-					<File>Y:/projects/iCE40HX8K/blinky/blinky/blinky_Implmnt/sbt/outputs/bitmap/blinky_top_bitmap.bin</File>
-					<AddressBase>0x00000000</AddressBase>
-					<EndAddress>0x00020000</EndAddress>
-					<DeviceSize>32</DeviceSize>
-					<DataSize>135179</DataSize>
-					<NumberOfDevices>1</NumberOfDevices>
-					<ReInitialize value="FALSE"/>
-				</Device>
-			</FlashDevice>
-			<FPGADevice>
-				<Device>
-					<Pos>1</Pos>
-					<Name></Name>
-					<File>Y:/projects/iCE40HX8K/blinky/blinky/blinky_Implmnt/sbt/outputs/bitmap/blinky_top_bitmap.bin</File>
-					<LocalChainList>
-						<LocalDevice index="-99"
-							name="Unknown"
-							file="Y:/projects/iCE40HX8K/blinky/blinky/blinky_Implmnt/sbt/outputs/bitmap/blinky_top_bitmap.bin"/>
-					</LocalChainList>
-					<Option>
-						<SVFVendor>JTAG STANDARD</SVFVendor>
-					</Option>
-				</Device>
-			</FPGADevice>
-			</FPGALoader>
 		</Device>
 	</Chain>
 	<ProjectOptions>
@@ -97,6 +42,6 @@
 	<CableOptions>
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-0</PortAdd>
-		<USBID>Lattice FTUSB Interface Cable A Location 0000 Serial A</USBID>
+		<USBID>USB --- Serial Converter Location 0000 Serial FTO8T4G</USBID>
 	</CableOptions>
 </ispXCF>
