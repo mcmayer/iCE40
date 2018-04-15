@@ -1,32 +1,88 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE		ispXCF	SYSTEM	"IspXCF.dtd" >
-<ispXCF version="3.7.0">
+<ispXCF version="3.9.0">
 	<Comment></Comment>
 	<Chain>
 		<Comm>JTAG</Comm>
 		<Device>
 			<SelectedProg value="TRUE"/>
 			<Pos>1</Pos>
-			<Vendor>Lattice</Vendor>
+			<Vendor>Micron</Vendor>
 			<Family>iCE40</Family>
-			<Name>iCE40HX8K</Name>
-			<IDCode>0x11008639</IDCode>
+			<Name>iCE40HX1K</Name>
 			<Package>All</Package>
-			<PON>iCE40HX8K</PON>
 			<Bypass>
 				<InstrLen>8</InstrLen>
 				<InstrVal>11111111</InstrVal>
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>Y:/projects/iCE40HX8K/timing/icecube/icecube_Implmnt/sbt/outputs/bitmap/timing_top_bitmap.bin</File>
-			<FileTime>06/09/16 16:17:59</FileTime>
-			<Operation>Fast Program</Operation>
+			<File>Y:/projects/iCE40HX8K/TRNG/TRNG/TRNG_Implmnt/sbt/outputs/bitmap/trng_top_bitmap.bin</File>
+			<FileTime>04/15/18 09:51:10</FileTime>
+			<Operation>SPI Flash Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
-				<IOState>HighZ</IOState>
-				<AccessMode>CRAM</AccessMode>
+				<Reinitialize value="TRUE"/>
+				<AccessMode>SPI Flash Programming</AccessMode>
 			</Option>
+			<FPGALoader>
+			<CPLDDevice>
+				<Device>
+					<Pos>1</Pos>
+					<Vendor>Lattice</Vendor>
+					<Family>iCE40</Family>
+					<Name>iCE40HX1K</Name>
+					<IDCode>0x11001639</IDCode>
+					<Package>All</Package>
+					<PON>iCE40HX1K</PON>
+					<Bypass>
+						<InstrLen>8</InstrLen>
+						<InstrVal>11111111</InstrVal>
+						<BScanLen>1</BScanLen>
+						<BScanVal>0</BScanVal>
+					</Bypass>
+					<Operation>Bypass</Operation>
+					<Option>
+						<SVFVendor>JTAG STANDARD</SVFVendor>
+						<IOState>HighZ</IOState>
+						<AccessMode>JTAG</AccessMode>
+					</Option>
+				</Device>
+			</CPLDDevice>
+			<FlashDevice>
+				<Device>
+					<Pos>1</Pos>
+					<Vendor>Micron</Vendor>
+					<Family>SPI Serial Flash</Family>
+					<Name>SPI-N25Q032</Name>
+					<IDCode>0x16</IDCode>
+					<Package>8-pin VDFPN8</Package>
+					<Operation>SPI Flash Erase,Program,Verify</Operation>
+					<File>Y:/projects/iCE40HX8K/TRNG/TRNG/TRNG_Implmnt/sbt/outputs/bitmap/trng_top_bitmap.bin</File>
+					<AddressBase>0x00000000</AddressBase>
+					<EndAddress>0x003F0000</EndAddress>
+					<DeviceSize>32</DeviceSize>
+					<DataSize>32300</DataSize>
+					<NumberOfDevices>1</NumberOfDevices>
+					<ReInitialize value="FALSE"/>
+				</Device>
+			</FlashDevice>
+			<FPGADevice>
+				<Device>
+					<Pos>1</Pos>
+					<Name></Name>
+					<File>Y:/projects/iCE40HX8K/TRNG/TRNG/TRNG_Implmnt/sbt/outputs/bitmap/trng_top_bitmap.bin</File>
+					<LocalChainList>
+						<LocalDevice index="-99"
+							name="Unknown"
+							file="Y:/projects/iCE40HX8K/TRNG/TRNG/TRNG_Implmnt/sbt/outputs/bitmap/trng_top_bitmap.bin"/>
+					</LocalChainList>
+					<Option>
+						<SVFVendor>JTAG STANDARD</SVFVendor>
+					</Option>
+				</Device>
+			</FPGADevice>
+			</FPGALoader>
 		</Device>
 	</Chain>
 	<ProjectOptions>

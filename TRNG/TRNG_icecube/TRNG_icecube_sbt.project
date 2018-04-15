@@ -1,28 +1,28 @@
 [Project]
 ProjectVersion=2.0
 Version=Lattice Semiconductor Corporation iCEcube - Release: 2017.08.27940 - Build Date: Sep 11 2017 17:40:01
-ProjectName=TRNG
+ProjectName=TRNG_icecube
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../trng_top.v=work,../flip_flop.v=work
+ProjectVFiles=../flip_flop.v=work,../trng_top.v=work
 ProjectCFiles=
-CurImplementation=TRNG_Implmnt
-Implementations=TRNG_Implmnt
+CurImplementation=TRNG_icecube_Implmnt
+Implementations=TRNG_icecube_Implmnt
 StartFromSynthesis=yes
 IPGeneration=false
 
-[TRNG_Implmnt]
+[TRNG_icecube_Implmnt]
 DeviceFamily=iCE40
 Device=HX1K
 DevicePackage=TQ144
 DevicePower=
-NetlistFile=TRNG_Implmnt/TRNG.edf
+NetlistFile=
 AdditionalEDIFFile=
 IPEDIFFile=
-DesignLib=TRNG_Implmnt/sbt/netlist/oadb-trng_top
+DesignLib=
 DesignView=
-DesignCell=trng_top
-SynthesisSDCFile=TRNG_Implmnt/TRNG.scf
+DesignCell=
+SynthesisSDCFile=
 UserPinConstraintFile=
 UserSDCFile=
 PhysicalConstraintFile=../trng.pcf
@@ -84,5 +84,5 @@ BitmapSetSecurity=no
 BitmapSetNoUsedIONoPullup=no
 FloorPlannerShowFanInNets=yes
 FloorPlannerShowFanOutNets=yes
-HookTo3rdPartyTextEditor=no
+HookTo3rdPartyTextEditor=
 

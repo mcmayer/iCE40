@@ -8,11 +8,11 @@ module flip_flop(
 
     // See the SiliconBlue ICE Technology Library by Lattice Semiconductor
 
-    SB_DFFS dffs (
+    SB_DFFSR dffs (
         .Q(el_out),
         .C(el_in),
-        .D(el_in),
-        .S(1'b0)
+        .R(1'b1),
+        .D(1'b1)
     ) /* synthesis syn_keep = 1 */;
 
 endmodule
