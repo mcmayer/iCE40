@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2017.08.27940 - Bui
 ProjectName=TRNG_icecube
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../flip_flop.v=work,../trng_top.v=work
+ProjectVFiles=../flip_flop.v=work,../trng_top.v=work,../sr.v=work
 ProjectCFiles=
 CurImplementation=TRNG_icecube_Implmnt
 Implementations=TRNG_icecube_Implmnt

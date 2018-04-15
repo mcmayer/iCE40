@@ -17,12 +17,13 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>Y:/projects/iCE40HX8K/TRNG/TRNG/TRNG_Implmnt/sbt/outputs/bitmap/trng_top_bitmap.bin</File>
-			<FileTime>04/15/18 09:51:10</FileTime>
+			<File>Y:/projects/iCE40HX8K/TRNG/TRNG_icecube/TRNG_icecube_Implmnt/sbt/outputs/bitmap/trng_top_bitmap.bin</File>
+			<FileTime>04/15/18 13:12:09</FileTime>
 			<Operation>SPI Flash Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<Reinitialize value="TRUE"/>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<AccessMode>SPI Flash Programming</AccessMode>
 			</Option>
 			<FPGALoader>
@@ -45,6 +46,7 @@
 					<Option>
 						<SVFVendor>JTAG STANDARD</SVFVendor>
 						<IOState>HighZ</IOState>
+						<SVFProcessor>SVF Processor</SVFProcessor>
 						<AccessMode>JTAG</AccessMode>
 					</Option>
 				</Device>
@@ -58,9 +60,9 @@
 					<IDCode>0x16</IDCode>
 					<Package>8-pin VDFPN8</Package>
 					<Operation>SPI Flash Erase,Program,Verify</Operation>
-					<File>Y:/projects/iCE40HX8K/TRNG/TRNG/TRNG_Implmnt/sbt/outputs/bitmap/trng_top_bitmap.bin</File>
+					<File>Y:/projects/iCE40HX8K/TRNG/TRNG_icecube/TRNG_icecube_Implmnt/sbt/outputs/bitmap/trng_top_bitmap.bin</File>
 					<AddressBase>0x00000000</AddressBase>
-					<EndAddress>0x003F0000</EndAddress>
+					<EndAddress>0x00010000</EndAddress>
 					<DeviceSize>32</DeviceSize>
 					<DataSize>32300</DataSize>
 					<NumberOfDevices>1</NumberOfDevices>
@@ -79,6 +81,7 @@
 					</LocalChainList>
 					<Option>
 						<SVFVendor>JTAG STANDARD</SVFVendor>
+						<SVFProcessor>SVF Processor</SVFProcessor>
 					</Option>
 				</Device>
 			</FPGADevice>

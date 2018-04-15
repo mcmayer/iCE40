@@ -1,9 +1,10 @@
 #-- Synopsys, Inc.
 #-- Project file Y:\projects\iCE40HX8K\TRNG\TRNG_icecube\TRNG_icecube_syn.prj
 #project files
-add_file -verilog -lib work "../flip_flop.v"
-add_file -verilog -lib work "../trng_top.v"
 
+add_file -verilog -lib work "../flip_flop.v" 
+add_file -verilog -lib work "../trng_top.v" 
+add_file -verilog -lib work "../sr.v" 
 #implementation: "TRNG_icecube_Implmnt"
 impl -add TRNG_icecube_Implmnt -type fpga
 
@@ -53,5 +54,5 @@ set_option -write_apr_constraint 1
 project -result_format "edif"
 project -result_file ./TRNG_icecube_Implmnt/TRNG_icecube.edf
 project -log_file "./TRNG_icecube_Implmnt/TRNG_icecube.srr"
-impl -active "TRNG_icecube_Implmnt"
+impl -active TRNG_icecube_Implmnt
 project -run synthesis -clean
